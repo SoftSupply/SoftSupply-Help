@@ -1,4 +1,5 @@
 #tool nuget:?package=NUnit.ConsoleRunner&version=3.4.0
+#addin "Cake.Bower"
 //////////////////////////////////////////////////////////////////////
 // ARGUMENTS
 //////////////////////////////////////////////////////////////////////
@@ -11,7 +12,8 @@ var configuration = Argument("configuration", "Release");
 //////////////////////////////////////////////////////////////////////
 
 // Define directories.
-var buildDir = Directory("./bin") + Directory(configuration);
+var workDir = Directory("./SoftSupply-Help");
+var buildDir = workDir + Directory("bin") + Directory(configuration);
 var solutionFile = "./SoftSupply-Help.sln";
 
 //////////////////////////////////////////////////////////////////////
@@ -29,6 +31,14 @@ Task("Restore-NuGet-Packages")
     .Does(() =>
 {
     NuGetRestore(solutionFile);
+});
+
+Task("Restore-Bower-Packages")
+    .IsDependentOn("Clean")
+    .Does(() => 
+{
+	// bower install using bower.json
+	Bower.Install(s => s.WithVerbose().UseWorkingDirectory(workDir));
 });
 
 Task("Build")
