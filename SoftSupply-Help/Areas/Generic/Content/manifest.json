@@ -1,0 +1,43 @@
+﻿{
+  "Name": "Generic",
+  "Title": "Genérico",
+  "Description": "Quisque ultricies nulla velit. Vivamus mattis lacinia urna, eget finibus sapien ornare et. Aenean ut dapibus metus. Donec interdum dolor nec erat porttitor, quis lobortis sapien tempus.",
+  "Index": [
+    {
+      "Title": "<b>Curabitur ullamcorper</b>",
+      "Items": [
+        {
+          "Title": "Praesent",
+          "Link": ""
+        },
+        {
+          "Title": "Placerat",
+          "Link": ""
+        }
+      ]
+    },
+    {
+      "Title": "Suspendisse",
+      "Items": [
+        {
+          "Title": "Curabitur",
+          "Link": ""
+        },
+        {
+          "Title": "Aliquam",
+          "Link": ""
+        }
+      ]
+    },
+    {
+      "Title": "<i class='fa fa-google' style='margin-right: 8px;'></i>Google",
+      "Link": "http://www.google.com/",
+      "Target": "_blank"
+    },
+    {
+      "Title": "<i class='fa fa-arrow-left' style='margin-right: 8px;'></i>Volver",
+      "Link": "/",
+      "Class": "alert alert-warning"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+﻿@using SoftSupply.Help.Models;
+
+@{
+    ViewBag.Title = "Ayuda";
+    ViewBag.SubTitle = "Principal";
+}
+
+<div class="jumbotron">
+    <h1>@ViewBag.Title</h1>
+    <p class="lead">Cras mollis id lacus sed lacinia. Sed mollis mauris blandit pharetra blandit. Pellentesque eu efficitur mauris, ut dignissim neque. Aenean egestas, risus a dictum venenatis, justo felis dictum odio, sed posuere mi dui vel est.</p>
+</div>
+<div class="row">
+    @foreach (var item in MvcApplication.Areas)
+    {
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img alt="@(item.Value.Title)" src="@Html.Holder($"areas/{item.Key}/content/img/logo.svg", 349, 192, theme: "random")">
+                <div class="caption">
+                    <h3>@(item.Value.Title)</h3>
+                    <p>@(item.Value.Description)</p>
+                    <p><a href="/@(item.Key)" class="btn btn-default" role="button">Ver &raquo;</a></p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
