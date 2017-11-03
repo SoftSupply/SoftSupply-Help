@@ -1,13 +1,5 @@
 
-# Created by https://www.gitignore.io/api/visualstudio,visualstudiocode
-
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history
+# Created by https://www.gitignore.io/api/visualstudio
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -289,8 +281,8 @@ __pycache__/
 *.pyc
 
 # Cake - Uncomment if you are using it
-# tools/**
-# !tools/packages.config
+tools/**
+!tools/packages.config
 
 # Telerik's JustMock configuration file
 *.jmconfig
@@ -305,9 +297,4 @@ __pycache__/
 # By default, sensitive information, such as encrypted password
 # should be stored in the .pubxml.user file.
 
-# End of https://www.gitignore.io/api/visualstudio,visualstudiocode
-Viewport
-Window
-×
-×
-×
+# End of https://www.gitignore.io/api/visualstudio
