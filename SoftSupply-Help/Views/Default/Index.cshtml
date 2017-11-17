@@ -10,7 +10,7 @@
     <p class="lead">Cras mollis id lacus sed lacinia. Sed mollis mauris blandit pharetra blandit. Pellentesque eu efficitur mauris, ut dignissim neque. Aenean egestas, risus a dictum venenatis, justo felis dictum odio, sed posuere mi dui vel est.</p>
 </div>
 <div class="row">
-    @foreach (var item in MvcApplication.Areas)
+    @foreach (var item in MvcApplication.Areas.Where(a => a.Key != "Generic"))
     {
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">

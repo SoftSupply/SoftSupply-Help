@@ -299,3 +299,6 @@ tools/**
 # should be stored in the .pubxml.user file.
 
 # End of https://www.gitignore.io/api/visualstudio
+
+SoftSupply-Help/Areas/**
+!SoftSupply-Help/Areas/Generic/**

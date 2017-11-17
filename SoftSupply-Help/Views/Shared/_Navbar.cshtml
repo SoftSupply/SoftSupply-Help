@@ -48,7 +48,7 @@
                                 <span class="sr-only">Toggle Dropdown</span>
                             </button>
                             <ul class="dropdown-menu">
-                                @foreach (var item in MvcApplication.Areas)
+                                @foreach (var item in MvcApplication.Areas.Where(a => a.Key != "Generic"))
                                 {
                                     <li><a href="/@(item.Key)">@item.Value.Title</a></li>
                                 }
