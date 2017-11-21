@@ -64,12 +64,12 @@
         <div class="row">
             @if (ViewBag.Manifest != null)
             {
-                <nav class="col-sm-3 hidden-print hidden-xs affix-top" style="margin-top: 32px;" role="complementary">
+                <nav class="col-sm-3 hidden-print hidden-xs affix-top" style="margin-top: 32px;" role="navigation">
                     <h4>Contenido</h4>
                     @Html.Partial("_Sidebar")
                 </nav>
             }
-            <div class="@(ViewBag.Manifest != null ? "col-sm-9" : "") col-xs-12" role="main">
+            <div class="@(ViewBag.Manifest != null ? "col-sm-9" : "") col-xs-12" style="margin-top: 32px;" role="main">
                 @RenderBody()
             </div>
         </div>

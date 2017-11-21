@@ -440,7 +440,6 @@
     <Content Include="Areas\GanSoftPro\Views\Default\Hacienda\Inventario.cshtml" />
     <Content Include="Areas\GanSoftPro\Views\Default\Hacienda\PlanesSanitarios.cshtml" />
     <Content Include="Areas\GanSoftPro\Views\Default\Hacienda\Seleccionar.cshtml" />
-    <Content Include="Areas\GanSoftPro\Views\Default\Inicio\Bienvenido.cshtml" />
     <Content Include="Areas\GanSoftPro\Views\Default\Inicio\Configuracion.cshtml" />
     <Content Include="Areas\GanSoftPro\Views\Default\Inicio\Instalacion.cshtml" />
     <Content Include="Areas\GanSoftPro\Views\Default\Inicio\Navegacion.cshtml" />
