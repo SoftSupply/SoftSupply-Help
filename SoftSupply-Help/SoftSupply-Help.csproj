@@ -363,7 +363,7 @@
     <Content Include="Areas\GanSoftPro\Content\images\captures\vientres_reportes.jpg" />
     <Content Include="Areas\GanSoftPro\Content\images\captures\vientres_reportes_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\images\cd-top-arrow.svg" />
-    <Content Include="Areas\GanSoftPro\Content\images\GanSoft.svg" />
+    <Content Include="Areas\GanSoftPro\Content\images\logo.svg" />
     <Content Include="Areas\GanSoftPro\Content\images\logo.png" />
     <Content Include="Areas\GanSoftPro\Content\images\softsupply.png" />
     <None Include="Areas\GanSoftPro\Content\scripts\_references.js" />
