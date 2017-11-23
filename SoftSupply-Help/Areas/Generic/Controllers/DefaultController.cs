@@ -9,9 +9,12 @@ namespace SoftSupply.Help.Areas.Generic.Content
     public class DefaultController : Controller
     {
         // GET: Generic/Default
-        public ActionResult Index()
+        public ActionResult Index(string id = "", string key = "")
         {
-            return View();
+            if (string.IsNullOrEmpty(id))
+                return View();
+            else
+                return View($"{id}/{key}");
         }
     }
 }

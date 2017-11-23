@@ -16,7 +16,7 @@
                 </a>
                 <a class="navbar-brand hidden-xs" href="#" style="padding-top: 8px;">
                     <span>
-                        <img alt="" src="@Html.Holder($"areas/{ViewBag.Manifest.Name}/content/img/brand.svg", 50, theme: "random")" height="50" width="50">
+                        <img alt="" src="@Html.Holder($"areas/{ViewBag.Manifest.Name}/content/images/logo.svg", 50, theme: "random")" height="50" width="50">
                     </span>
                 </a>
             }
@@ -48,7 +48,7 @@
                                 <span class="sr-only">Toggle Dropdown</span>
                             </button>
                             <ul class="dropdown-menu">
-                                @foreach (var item in MvcApplication.Areas)
+                                @foreach (var item in MvcApplication.Areas.Where(a => a.Key != "Generic"))
                                 {
                                     <li><a href="/@(item.Key)">@item.Value.Title</a></li>
                                 }
