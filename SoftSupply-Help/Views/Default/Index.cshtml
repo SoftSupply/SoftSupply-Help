@@ -7,11 +7,12 @@
 
 <div class="jumbotron">
     <h1>@ViewBag.Title</h1>
-    <p class="lead">Manuales de ayuda creados con el fin de guiar a los usuarios entres las diferentes opciones y configuración de los programas que se muestran a continuación
+    <p class="lead">
+        Manuales de ayuda creados con el fin de guiar a los usuarios entres las diferentes opciones y configuración de los programas que se muestran a continuación
     </p>
 </div>
 <div class="row">
-    @foreach (var item in MvcApplication.Areas.Where(a => a.Key != "Generic"))
+    @foreach (var item in MvcApplication.Areas.Where(a => a.Key != "Generic" || !MvcApplication.Areas.Any()))
     {
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
@@ -19,7 +20,7 @@
                 <div class="caption">
                     <h3>@(item.Value.Title)</h3>
                     <p>@(item.Value.Description)</p>
-                    <p><a href="/@(item.Key)" class="btn btn-default" role="button">Ver &raquo;</a></p>
+                    <p><a href="@($"{HttpContext.Current.Request.Url.AbsoluteUri}/{item.Key}")" class="btn btn-default" role="button">Ver &raquo;</a></p>
                 </div>
             </div>
         </div>
