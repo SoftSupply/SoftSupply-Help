@@ -16,7 +16,7 @@
     {
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-                <img alt="@(item.Value.Title)" src="@Html.Holder($"areas/{item.Key}/content/images/logo.svg", 349, 192, theme: "random")">
+                <img alt="@(item.Value.Title)" src="@($"{HttpContext.Current.Request.Url.AbsoluteUri}/areas/{item.Key}/content/images/feature.png")">
                 <div class="caption">
                     <h3>@(item.Value.Title)</h3>
                     <p>@(item.Value.Description)</p>

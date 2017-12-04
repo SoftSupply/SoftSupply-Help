@@ -1,16 +1,23 @@
 ﻿@if (ViewBag.Manifest != null && ViewBag.Manifest.Index != null && ViewBag.Manifest.Index.Count > 0)
 {
     <ul class="nav navmenu-nav">
+        <li class="visible-xs">
+            <a href="@($"{ViewBag.Manifest.Name}")">Inicio</a>
+        </li>
         @foreach (var item in ViewBag.Manifest.Index)
         {
             if (item.Items != null && item.Items.Count > 0)
             {
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle @(item.Class ?? "")" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">@Html.Raw(item.Title)</a>
+                    <a href="#" class="dropdown-toggle @(item.Class ?? "")" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        @Html.Raw(item.Title)
+                    </a>
                     <ul class="dropdown-menu navmenu-nav" role="menu">
                         @foreach (var subitem in item.Items)
                         {
-                            <li><a href="@(subitem.Link)" target="@(subitem.Target ?? "")" class="@(subitem.Class ?? "")">@Html.Raw(subitem.Title)</a></li>
+                            <li>
+                                <a href="@(subitem.Link)" target="@(subitem.Target ?? "")" class="@(subitem.Class ?? "")">@Html.Raw(subitem.Title)</a>
+                            </li>
                         }
                     </ul>
                 </li>
