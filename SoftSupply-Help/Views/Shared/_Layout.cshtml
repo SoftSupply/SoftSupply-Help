@@ -9,6 +9,11 @@
         ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
         favicon = $"areas/{ViewBag.Manifest.Name}/favicon.ico";
     }
+    else
+    {
+        ViewBag.Manifest = new Manifest();
+        favicon = "favicon.ico";
+    }
 }
 
 <!DOCTYPE html>
@@ -63,7 +68,7 @@
     </header>
     <div id="0" class="container body-content" style="padding-top: 64px;">
         <div class="row">
-            @if (ViewBag.Manifest != null)
+            @if (ViewBag.Manifest != null && !string.IsNullOrEmpty(ViewBag.Manifest.Title))
             {
                 <nav class="col-sm-3 hidden-print hidden-xs affix-top" style="margin-top: 32px;" role="navigation">
                     <div id="sidebar">
@@ -72,16 +77,30 @@
                     </div>
                 </nav>
             }
-            <div class="@(ViewBag.Manifest != null ? "col-sm-9" : "") col-xs-12" role="main">
+            <div class="@(ViewBag.Manifest != null && !string.IsNullOrEmpty(ViewBag.Manifest.Title) ? "col-sm-9" : "") col-xs-12" role="main">
                 @RenderBody()
             </div>
         </div>
-        <div class="row">
-            <footer class="col-md-12 text-center" style="padding-bottom: 64px;">
-                <hr />
-                <small>
-                    © @(DateTime.Now.Year) - TDPro, C.A. J-29636526-1, Maracaibo - Venezuela
-                </small>
+        <div class="row" style="padding-bottom: 64px;">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <hr />
+                        </div>
+                        <div class="col-sm-6 text-center-xs">
+                            <small>
+                                &copy; @DateTime.Now.Year - TDPro, C.A. J-29636526-1<br />
+                            </small>
+                        </div>
+                        <div class="col-sm-12 visible-xs">
+                            <hr />
+                        </div>
+                        <div class="col-sm-6 text-right-not-xs text-center-xs">
+                            @Html.Partial("_TranslatePartial")
+                        </div>
+                    </div>
+                </div>
             </footer>
         </div>
     </div>
@@ -98,6 +117,8 @@
     @Scripts.Render("~/scripts/lightbox")
     @Scripts.Render("~/scripts/default")
     @RenderSection("scripts", required: false)
+
+    @this.WriteScriptBlocks()
 
     <script>
         window.addEventListener("hashchange", function () { scrollBy(0, -72) })

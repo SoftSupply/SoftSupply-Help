@@ -118,7 +118,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\Extensions.cs" />
+    <Content Include="App_Code\References.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -473,9 +473,11 @@
     <None Include="Areas\Generic\Content\js\_references.js" />
     <Content Include="Areas\Generic\Content\css\site.css" />
     <Content Include="Areas\Generic\favicon.ico" />
+    <Content Include="Content\css\bootstrap-11292.css" />
     <Content Include="Content\css\default.cd-top.css" />
     <Content Include="Content\img\cd-top-arrow.svg" />
     <Content Include="Content\img\favicon.png" />
+    <Content Include="Content\img\logos\softsupply.png" />
     <Content Include="Content\js\default.cd-top.js" />
     <Content Include="Content\js\default.js" />
     <Content Include="favicon.ico" />
@@ -493,6 +495,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Shared\_TranslatePartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

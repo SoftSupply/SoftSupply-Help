@@ -15,7 +15,8 @@ namespace SoftSupply.Help
 
             bundles.Add(new StyleBundle("~/styles/bootstrap")
                 .Include("~/components/bootstrap/dist/css/bootstrap.css", cssTransform)
-                .Include("~/components/jasny-bootstrap/dist/css/jasny-bootstrap.css", cssTransform));
+                .Include("~/components/jasny-bootstrap/dist/css/jasny-bootstrap.css", cssTransform)
+                .Include("~/content/css/bootstrap-11292.css", cssTransform));
 
             bundles.Add(new StyleBundle("~/styles/font-awesome").Include(
                 "~/components/font-awesome/css/font-awesome.css", cssTransform));

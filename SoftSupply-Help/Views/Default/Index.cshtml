@@ -1,14 +1,15 @@
 ﻿@using SoftSupply.Help.Models;
 
 @{
-    ViewBag.Title = "Ayuda";
-    ViewBag.SubTitle = "Principal";
+    ViewBag.Title = "Bienvenido";
+    ViewBag.SubTitle = "Centro de soporte y ayuda";
+    ViewBag.MainTitle = "Centro de soporte y ayuda";
 }
 
 <div class="jumbotron">
     <h1>@ViewBag.Title</h1>
     <p class="lead">
-        Manuales de ayuda creados con el fin de guiar a los usuarios entres las diferentes opciones y configuración de los programas que se muestran a continuación
+        A traves de este sitio web, usted podrá consultar los manuales de ayuda, creados con el fin de guiar a los usuarios en el manejo y configuracion de nuestros productos.
     </p>
 </div>
 <div class="row">
@@ -16,11 +17,11 @@
     {
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-                <img alt="@(item.Value.Title)" src="@($"{HttpContext.Current.Request.Url.AbsoluteUri}/areas/{item.Key}/content/images/feature.png")">
+                <img alt="@(item.Value.Title)" src="@($"{HttpContext.Current.Request.Url.AbsoluteUri}/areas/{item.Key}/content/img/feature.png")">
                 <div class="caption">
                     <h3>@(item.Value.Title)</h3>
                     <p>@(item.Value.Description)</p>
-                    <p><a href="@($"{HttpContext.Current.Request.Url.AbsoluteUri}/{item.Key}")" class="btn btn-default" role="button">Ver &raquo;</a></p>
+                    <p><a href="@($"{HttpContext.Current.Request.Url.AbsoluteUri}/{item.Key}")" class="btn btn-primary btn-block" role="button">Consultar</a></p>
                 </div>
             </div>
         </div>
