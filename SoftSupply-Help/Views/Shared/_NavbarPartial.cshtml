@@ -24,7 +24,7 @@
             {
                 <a class="navbar-brand hidden-xs" href="#" style="padding-top: 8px;">
                     <span>
-                        <img alt="" src="@Html.Holder($"content/img/favicon.png", 64, theme: "random")" height="64" width="64">
+                        <img alt="" src="@Html.Holder($"/content/img/favicon.png", 64, theme: "random")" height="64" width="64">
                     </span>
                 </a>
                 <a class="navbar-brand" href="#">
@@ -50,7 +50,7 @@
                 </form>
             }
             <ul class="nav navbar-nav visible-xs">
-                @RenderPage("_Sidebar.cshtml")
+                @Html.Partial("_SidebarPartial")
             </ul>
             @if (ViewBag.Manifest != null && !string.IsNullOrEmpty(ViewBag.Manifest.Title))
             {

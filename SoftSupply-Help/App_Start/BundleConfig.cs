@@ -71,7 +71,7 @@ namespace SoftSupply.Help
 #if DEBUG
             BundleTable.EnableOptimizations = false;
 #else
-            BundleTable.EnableOptimizations = true;
+            BundleTable.EnableOptimizations = false;
 #endif
 
         }
