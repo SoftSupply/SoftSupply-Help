@@ -14,22 +14,22 @@ namespace SoftSupply.Help
             IItemTransform cssTransform = new CssRewriteUrlTransformWrapper();
 
             bundles.Add(new StyleBundle("~/styles/bootstrap")
-                .Include("~/components/bootstrap/dist/css/bootstrap.css", cssTransform)
-                .Include("~/components/jasny-bootstrap/dist/css/jasny-bootstrap.css", cssTransform)
-                .Include("~/content/css/bootstrap-11292.css", cssTransform));
+                .Include("~/components/bootstrap/dist/css/bootstrap.css")
+                .Include("~/components/jasny-bootstrap/dist/css/jasny-bootstrap.css")
+                .Include("~/content/css/bootstrap-11292.css"));
 
             bundles.Add(new StyleBundle("~/styles/font-awesome").Include(
-                "~/components/font-awesome/css/font-awesome.css", cssTransform));
+                "~/components/font-awesome/css/font-awesome.css"));
 
             bundles.Add(new StyleBundle("~/styles/lightbox").Include(
-                "~/components/lightbox2/dist/css/lightbox.css", cssTransform));
+                "~/components/lightbox2/dist/css/lightbox.css"));
 
             bundles.Add(new StyleBundle("~/styles/animate").Include(
-                "~/components/animate.css/animate.css", cssTransform));
+                "~/components/animate.css/animate.css"));
 
             bundles.Add(new StyleBundle("~/styles/default")
-                .Include("~/content/css/default.css", cssTransform)
-                .Include("~/content/css/default.cd-top.css", cssTransform));
+                .Include("~/content/css/default.css")
+                .Include("~/content/css/default.cd-top.css"));
 
             #endregion
 
