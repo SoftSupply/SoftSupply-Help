@@ -1,0 +1,655 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DA1B2C78-708B-4AB7-BD82-FFDE8602F6E0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SoftSupply.Help</RootNamespace>
+    <AssemblyName>SoftSupply.Help</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\References.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\GanSoftApp\AreaRegistration.cs" />
+    <Compile Include="Areas\GanSoftApp\Controllers\DefaultController.cs" />
+    <Compile Include="Areas\GanSoftPro\AreaRegistration.cs" />
+    <Compile Include="Areas\GanSoftPro\Controllers\DefaultController.cs" />
+    <Compile Include="Areas\Generic\AreaRegistration.cs" />
+    <Compile Include="Areas\Generic\Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Manifest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".bowerrc">
+      <DependentUpon>bower.json</DependentUpon>
+    </Content>
+    <Content Include="Areas\GanSoftApp\.bowerrc">
+      <DependentUpon>bower.json</DependentUpon>
+    </Content>
+    <Content Include="Areas\GanSoftApp\.gitattributes" />
+    <Content Include="Areas\GanSoftApp\.gitignore" />
+    <Content Include="Areas\GanSoftApp\Content\img\badges\appstore.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\badges\appstore.png" />
+    <Content Include="Areas\GanSoftApp\Content\img\badges\playstore.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\badges\playstore.png" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\Agregar_un_animal.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\Animales_principal.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\automatizaciones.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\cambion_sin_hacienda.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\cambios_de_lotes.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\cambio_de_hacienda.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\codigos1.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\Condicion_corporal.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\contacto.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\datosgenerales.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\detalles_del_animal.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\detalles_del_animal_crecimiento.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\detalles_del_animal_general.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\detalles_del_animal_produccion.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\detalles_del_animal_reproduccion.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\diagnostico_clinico_vacuna.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\distribucion_estatus_reproductivo.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\distribucion_inventario.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\distribucion_lotes.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\distribucion_productivo.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\eventos.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\iniciodesesion.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\Inicio_sin_datos.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\Menu_principal.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\Menu_principal_2.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\muestraanimales.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\notificacion_de_inventario.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\opciones.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\otros_cambios.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\parametros.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\parto.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\perfil.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\pesajes_de_leche.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\peso_corporal.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\planes_sanitarios.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\principal_codigo.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\registro.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\revision.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\secado.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\secado_destete.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\servicio.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\sincronizacion.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\terminologia_h.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\terminologia_m.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\terminologia_otros.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\captures\terminologia_principal.jpg" />
+    <Content Include="Areas\GanSoftApp\Content\img\feature.png" />
+    <Content Include="Areas\GanSoftPro\.gitattributes" />
+    <Content Include="Areas\GanSoftPro\.gitignore" />
+    <Content Include="Areas\GanSoftPro\Content\img\feature.png" />
+    <Content Include="Areas\GanSoftApp\Content\img\logo.png" />
+    <Content Include="Areas\GanSoftApp\Content\img\logo.svg" />
+    <None Include="Areas\GanSoftApp\Content\js\_references.js" />
+    <Content Include="Areas\GanSoftApp\Content\css\site.css" />
+    <Content Include="Areas\GanSoftApp\favicon.ico" />
+    <Content Include="Areas\GanSoftPro\.bowerrc">
+      <DependentUpon>bower.json</DependentUpon>
+    </Content>
+    <Content Include="Areas\GanSoftPro\Content\img\captures\abortos.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\abortos_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\acerca_de.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\acerca_de_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\actualizaciones_extras.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\actualizaciones_extras_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\arbol_genealogico.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\arbol_genealogico_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\arbol_genealogico_reportes.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\arbol_genealogico_reportes_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\Archivo.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\avisos_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\avisos_2.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\ayuda.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\barra_de_estado.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\barra_de_estado_ver.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\barra_de_menu.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\barra_de_menu_ver.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\barra_de_navegacion.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\barra_de_navegacion_ver.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\bienvenida.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\bienvenida_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\buscar_actualizaciones.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\buscar_animal_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\buscar_animal_2.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\cambiar_conexion.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\cambiar_conexion1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\cambios_de_estado_y_sexo.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\cambios_de_estado_y_sexo_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\cambios_de_locaciones.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\cambios_de_locaciones_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\cascada.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\cascada_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\celos_sin_servicios.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\celos_sin_servicios_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\cerrar_sesion1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\cerrar_sesion2.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\cierres_estadisticas.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\cierres_estadisticas_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\clinicos.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\clinicos_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\condiciones_corporales.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\condiciones_corporales_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\configuracion.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\configuracion_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\contenido.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\contenido_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\crecimiento_estadisticas.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\crecimiento_estadisticas_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\datos_generales.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\datos_generales_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\datos_generales_registros.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\datos_generales_registros_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\datos_generales_reportes.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\datos_generales_reportes_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\demostrativa_con_datos.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\Demostrativa_con_datos_2.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\eliminar_animales_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\eliminar_animales_2.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\enviar_comentarios.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\enviar_comentarios_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\estadistica.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\evento.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\exportar_datos.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_10.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_2.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_3.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_4.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_5.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_6.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_8.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_9.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\generador_de_reporte.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\generador_de_reporte_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\generador_de_reporte_2.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\generador_de_reporte_3.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\generador_de_reporte_4.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\generador_de_reporte_5.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\hacienda.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\hacienda_codigos_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\hacienda_codigos_2.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\herramientas.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\hierros_y_señales.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\hierros_y_señales_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\hierros_y_señales_eventos.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\hierros_y_señales_eventos_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_cambios_de_condicion_corporal.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_cambios_de_condicion_corporal_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_cambios_de_locacion.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_cambios_de_locacion_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_clinica.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_clinica_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_comentarios.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_comentarios_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_inventario.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_inventario_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_lactancias.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_lactancias_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_movimientos.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_movimientos_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_pesajes_de_leche.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_pesajes_de_leche_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_pesos_corporales.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_pesos_corporales_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_planes_sanitarios.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_planes_sanitarios_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_pruebas_de_mastitis.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_pruebas_de_mastitis_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_reproduccion.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\historicos_reproduccion_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\identificadores_electronicos.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\identificadores_electronicos_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\importar_datos.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\importar_datos_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\ingresar_animal_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\ingresar_animal_2.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\inventario_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\inventario_2.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\lactancias_inducidas.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\lactancias_inducidas_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\mosaico_horizontal.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\mosaico_horizontal_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\mosaico_vertical.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\mosaico_vertical_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\movimientos_de_inventario.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\movimientos_de_inventario_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\niveles_herramientas.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\niveles_herramientas_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\notificacion_de_inventario.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\notificacion_de_inventario_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\no_vientres.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\no_vientres_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\no_vientres_reportes.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\no_vientres_reportes_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\opciones_herramientas.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\opciones_herramientas_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\opciones_herramientas_2.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\opciones_herramientas_3.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\opciones_herramientas_4.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\opciones_herramientas_5.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\opciones_herramientas_6.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_cambios_eventos.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_cambios_eventos_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_reportes_analisis.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_reportes_analisis_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_reportes_calculo.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_reportes_calculo_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_reportes_codigos.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_reportes_codigos_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_reportes_comportamiento.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_reportes_comportamiento_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_reportes_descendientes.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_reportes_descendientes_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_reportes_etiquetas.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_reportes_etiquetas_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_reportes_formularios.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_reportes_formularios_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_reportes_pesajes.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_reportes_pesajes_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_reportes_propietarios.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\otros_reportes_propietarios_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\partos.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\partos_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\pesajes_de_leche.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\pesajes_de_leche_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\pesajes_de_leche_estadisticas.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\pesajes_de_leche_estadisticas_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\pesos_corporales.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\pesos_corporales_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\planes_sanitarios_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\planes_sanitarios_2.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\plantillas_de_importancion.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\plantillas_de_selectores.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\plantillas_de_selectores_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\plantillas_para_gansoft_movil.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\plantillas_para_gansoft_movil_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\produccion_de_embriones.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\produccion_de_embriones_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\produccion_estadisticas.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\produccion_estadisticas_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\pruebas_de_mastitis.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\pruebas_de_mastitis_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\recuperar_animales_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\recuperar_animales_2.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\registro.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\reportes.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\reproduccion_estadisticas.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\reproduccion_estadisticas_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\reproductores.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\reproductores_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\reproductores_reportes.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\reproductores_reportes_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\respaldar_datos.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\respaldar_datos_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\restaurar_datos.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\restaurar_datos_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\revisiones.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\revisiones_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\salir_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\salir_2.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\secado_destete.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\secado_destete_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\seleccionar.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\servicios.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\servicios_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\tecnicos.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\tecnicos_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\tecnicos_reportes.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\tecnicos_reportes_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\trasladar_animales.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\trasladar_animales_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\usuarios_herramientas.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\usuarios_herramientas_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\ventana.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\ver.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\vientres.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\vientres_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\vientres_reportes.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\vientres_reportes_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\logo.svg" />
+    <Content Include="Areas\GanSoftPro\Content\img\logo.png" />
+    <Content Include="Areas\GanSoftApp\bower.json" />
+    <Content Include="Areas\GanSoftApp\CHANGELOG.md" />
+    <Content Include="Areas\GanSoftApp\Content\manifest.json" />
+    <Content Include="Areas\GanSoftApp\README.md" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Animales\Principal.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Animales\Detallesdelanimal.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Animales\Distribucion.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Codigos\Listadeacciones.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Codigos\Principal.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Codigos\Plansanitario.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Hacienda\Automatizaciones.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Hacienda\Cambiodehacienda.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Hacienda\Datosgenerales.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Hacienda\Parametros.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Hacienda\Terminologia.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Eventos\Parto.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Eventos\Diagnosticoclinico.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Eventos\Condicioncorporal.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Eventos\Pesocorporal.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Eventos\Secado.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Eventos\Cambiosdelote.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Eventos\Pesasdeleche.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Eventos\Notificaciondeinv.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Eventos\Otroscambios.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Eventos\Revision.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Eventos\Servicio.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Index.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Opciones\Principal.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Opciones\Sincronizacion.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Perfil\Informacion.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Perfil\Principal.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Perfil\Iniciarsesion.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\Default\Perfil\Registrarse.cshtml" />
+    <Content Include="Areas\GanSoftApp\Views\web.config" />
+    <Content Include="Areas\GanSoftApp\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\GanSoftPro\CHANGELOG.md" />
+    <None Include="Areas\GanSoftPro\Content\js\_references.js" />
+    <Content Include="Areas\GanSoftPro\Content\css\site.css" />
+    <Content Include="Areas\GanSoftPro\favicon.ico" />
+    <Content Include="Areas\Generic\.gitattributes" />
+    <Content Include="Areas\Generic\.gitignore" />
+    <None Include="Areas\Generic\Content\js\_references.js" />
+    <Content Include="Areas\Generic\Content\css\site.css" />
+    <Content Include="Areas\Generic\favicon.ico" />
+    <Content Include="Content\css\bootstrap-11292.css" />
+    <Content Include="Content\css\default.cd-top.css" />
+    <Content Include="Content\img\cd-top-arrow.svg" />
+    <Content Include="Content\img\favicon.png" />
+    <Content Include="Content\img\logos\softsupply.png" />
+    <Content Include="Content\js\default.cd-top.js" />
+    <Content Include="Content\js\default.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\css\default.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Shared\_TranslatePartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\GanSoftApp\Views\Shared\" />
+    <Folder Include="Areas\GanSoftPro\Views\Shared\" />
+    <Folder Include="Areas\Generic\Content\img\" />
+    <Folder Include="Areas\Generic\Views\Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bower.json" />
+    <Content Include="Areas\Generic\Views\web.config" />
+    <Content Include="Areas\Generic\Views\Default\Index.cshtml" />
+    <Content Include="Areas\Generic\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Generic\Content\manifest.json" />
+    <Content Include="Areas\GanSoftPro\bower.json" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Archivo\Archive.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Archivo\CerrarSesion.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Archivo\ImportarDatos.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Archivo\PlantillasdeImportacion.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Archivo\RespaldarDatos.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Archivo\RestaurarDatos.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Archivo\Salir.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Estadisticas\Produccion.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Estadisticas\Reproduccion.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Eventos\Abortos.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Eventos\Cambiosdelocacion.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Eventos\Celosinservicio.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Eventos\Clinicos.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Eventos\Condicionescorporales.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Eventos\Hierrosyseñales.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Eventos\Identificadoreselectronicos.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Eventos\Lactanciasinducidas.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Eventos\Notificaciondeinventario.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Eventos\Otroscambios.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Eventos\Partos.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Eventos\Pesajesdeleche.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Eventos\Pesoscorporales.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Eventos\Producciondeembriones.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Eventos\Pruebasdemastitis.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Eventos\Revisiones.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Eventos\Secadodestete.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Eventos\Servicios.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Hacienda\Avisos.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Hacienda\Codigo.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Hacienda\Configuracion.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Hacienda\datosgenerales.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Hacienda\Inventario.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Hacienda\PlanesSanitarios.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Hacienda\Seleccionar.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Inicio\Configuracion.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Inicio\Instalacion.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Inicio\Navegacion.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Inicio\Requerimientos.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Principal\Estate.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Principal\Event.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Principal\Help.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Principal\Principal.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Principal\Registry.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Principal\Report.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Principal\Statistics.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Principal\Tools.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Principal\View.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Registros\ArbolGenealogico.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Registros\Buscaranimal.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Registros\CambiosdeEstado.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Registros\DatosGenerales.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Registros\EliminarAnimal.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Registros\HierrosySeñales.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Registros\IngresarAnimal.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Registros\MovimientosdeInventario.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Registros\NoVientres.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Registros\RecuperarAnimales.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Registros\Reproductores.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Registros\Tecnicos.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Registros\TrasladarAnimales.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Registros\Vientres.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Estadisticas\Cierres.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Estadisticas\Crecimiento.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Unistall\PrincipalU.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Ver\Barras.cshtml" />
+    <Content Include="Areas\GanSoftPro\Content\manifest.json" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Index.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\web.config" />
+    <Content Include="Areas\GanSoftPro\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Reportes\Arbolgenealogico.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Reportes\Datosgenerales.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Reportes\Generador.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Reportes\Historicos.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Reportes\Novientres.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Reportes\OtrosReportes.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Reportes\Reproductores.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Reportes\Tecnicos.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Reportes\Vientres.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Ayuda\Acercade.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Ayuda\Actualizaciones.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Ayuda\Comentarios.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Ayuda\Contenido.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Ayuda\Inicio.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Herramientas\Niveles.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Herramientas\Opciones.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Herramientas\Usuarios.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Principal\Ventana.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Estadisticas\Pesajesdeleche.cshtml" />
+    <Content Include="Areas\GanSoftPro\README.md" />
+    <Content Include="Areas\Generic\README.md" />
+    <Content Include="Areas\Generic\CHANGELOG.md" />
+    <Content Include="Areas\Generic\bower.json" />
+    <Content Include="Areas\Generic\.bowerrc">
+      <DependentUpon>bower.json</DependentUpon>
+    </Content>
+    <None Include="packages.config" />
+    <Content Include="Views\Shared\_Navbar.cshtml" />
+    <Content Include="Views\Shared\_Sidebar.cshtml" />
+    <Content Include="Views\Shared\_Title.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59879</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59178/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{50CCC5FA-C7C3-4FEC-824A-1A75264FE669}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		.gitmodules = .gitmodules
+		build.cake = build.cake
+		build.ps1 = build.ps1
+		CHANGELOG.md = CHANGELOG.md
+		LICENSE = LICENSE
+		README.md = README.md
+		run.ps1 = run.ps1
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftSupply-Help", "SoftSupply-Help\SoftSupply-Help.csproj", "{DA1B2C78-708B-4AB7-BD82-FFDE8602F6E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA1B2C78-708B-4AB7-BD82-FFDE8602F6E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA1B2C78-708B-4AB7-BD82-FFDE8602F6E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA1B2C78-708B-4AB7-BD82-FFDE8602F6E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA1B2C78-708B-4AB7-BD82-FFDE8602F6E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {706A8517-2758-41D3-9F5F-090A2AE6066D}
+	EndGlobalSection
+EndGlobal

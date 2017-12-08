@@ -1,0 +1,182 @@
+﻿* {
+    font-family: 'Century Gothic';
+}
+
+/* navmenu */
+
+.navmenu-nav > li.dropdown > a > .caret {
+    margin-top: 8px;
+}
+
+.navmenu-nav {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .navmenu-nav > li > a {
+        color: #9d9d9d;
+        font-weight: normal;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+.dropdown-backdrop {
+    visibility: hidden !important;
+}
+
+/* sidebar */
+
+#sidebar > .navmenu-nav li a > i {
+    padding-right: 30px;
+}
+
+#sidebar > ul.navmenu-nav li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 3px;
+    background-color: #171717;
+    -webkit-transition: width .2s ease-in;
+    -moz-transition: width .2s ease-in;
+    -ms-transition: width .2s ease-in;
+    transition: width .2s ease-in;
+}
+
+#sidebar > ul > li:nth-child(1):before,
+#sidebar > ul > li:nth-child(1).dropdown.open > a.dropdown-toggle {
+    color: white;
+    background-color: #f54437 !important;
+}
+
+#sidebar > ul > li:nth-child(2):before,
+#sidebar > ul > li:nth-child(2).dropdown.open > a.dropdown-toggle {
+    color: white;
+    background-color: #ea1f64 !important;
+}
+
+#sidebar > ul > li:nth-child(3):before,
+#sidebar > ul > li:nth-child(3).dropdown.open > a.dropdown-toggle {
+    color: white;
+    background-color: #9d28b1 !important;
+}
+
+#sidebar > ul > li:nth-child(4):before,
+#sidebar > ul > li:nth-child(4).dropdown.open > a.dropdown-toggle {
+    color: white;
+    background-color: #683bb8 !important;
+}
+
+#sidebar > ul > li:nth-child(5):before,
+#sidebar > ul > li:nth-child(5).dropdown.open > a.dropdown-toggle {
+    color: white;
+    background-color: #4052b6 !important;
+}
+
+#sidebar > ul > li:nth-child(6):before,
+#sidebar > ul > li:nth-child(6).dropdown.open > a.dropdown-toggle {
+    color: white;
+    background-color: #2297f4 !important;
+}
+
+#sidebar > ul > li:nth-child(7):before,
+#sidebar > ul > li:nth-child(7).dropdown.open > a.dropdown-toggle {
+    color: white;
+    background-color: #04aaf5 !important;
+}
+
+#sidebar > ul > li:nth-child(8):before,
+#sidebar > ul > li:nth-child(8).dropdown.open > a.dropdown-toggle {
+    color: white;
+    background-color: #00bdd5 !important;
+}
+
+#sidebar > ul > li:nth-child(9):before,
+#sidebar > ul > li:nth-child(9).dropdown.open > a.dropdown-toggle {
+    color: white;
+    background-color: #009789 !important;
+}
+
+#sidebar > ul > li:nth-child(10):before,
+#sidebar > ul > li:nth-child(10).dropdown.open > a.dropdown-toggle {
+    color: white;
+    background-color: #4db051 !important;
+}
+
+#sidebar > ul > li:nth-child(11):before,
+#sidebar > ul > li:nth-child(11).dropdown.open > a.dropdown-toggle {
+    color: white;
+    background-color: #8cc44b !important;
+}
+
+#sidebar > ul > li:nth-child(12):before,
+#sidebar > ul > li:nth-child(12).dropdown.open > a.dropdown-toggle {
+    color: white;
+    background-color: #cedd3a !important;
+}
+
+#sidebar > ul > li:nth-child(13):before,
+#sidebar > ul > li:nth-child(13).dropdown.open > a.dropdown-toggle {
+    color: white;
+    background-color: #ffc208 !important;
+}
+
+#sidebar > ul > li:nth-child(14):before,
+#sidebar > ul > li:nth-child(14).dropdown.open > a.dropdown-toggle {
+    color: white;
+    background-color: #ff9900 !important;
+}
+
+#sidebar > ul > li:nth-child(15):before,
+#sidebar > ul > li:nth-child(15).dropdown.open > a.dropdown-toggle {
+    color: white;
+    background-color: #ff5823 !important;
+}
+
+#sidebar > ul > li a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+    #sidebar > ul > li a:hover {
+        color: white;
+        background-color: transparent;
+    }
+
+#sidebar > ul > li.dropdown.open > ul > li a:hover,
+#sidebar > ul > li.dropdown.open > ul > li a:active,
+#sidebar > ul > li.dropdown.open > ul > li a:focus {
+    color: black;
+    background-color: #f5f5f5;
+}
+
+/* animations */
+
+#sidebar > .navmenu-nav li:hover:before,
+#sidebar > .navmenu-nav li.open:hover:before {
+    width: 100%;
+    -webkit-transition: width .2s ease-in;
+    -moz-transition: width .2s ease-in;
+    -ms-transition: width .2s ease-in;
+    transition: width .2s ease-in;
+}
+
+#sidebar > ul > li.dropdown > .navmenu-nav li a {
+    padding: 10px 15px 10px 30px;
+}
+
+#sidebar > .navmenu-nav li a:hover,
+#sidebar > .navmenu-nav li a:active,
+#sidebar > .navmenu-nav li a:focus,
+#sidebar > .navmenu-nav li.open a:hover,
+#sidebar > .navmenu-nav li.open a:active,
+#sidebar > .navmenu-nav li.open a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}

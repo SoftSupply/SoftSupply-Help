@@ -1,0 +1,12 @@
+﻿@model object
+
+<div class="page-header">
+    @Html.Raw(ViewData["icon"])
+    <h1>
+        @ViewBag.Title
+        @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+        {
+            <br /><small>@ViewBag.SubTitle</small>
+        }
+    </h1>
+</div>
