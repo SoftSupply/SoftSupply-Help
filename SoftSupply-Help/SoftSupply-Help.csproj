@@ -17,7 +17,7 @@
     <AssemblyName>SoftSupply.Help</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -118,6 +118,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Areas\Reseller\AreaRegistration.cs" />
+    <Compile Include="Areas\Reseller\Controllers\DefaultController.cs" />
     <Compile Include="References.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -128,8 +130,6 @@
     <Compile Include="Areas\GanSoftPro\Controllers\DefaultController.cs" />
     <Compile Include="Areas\Generic\AreaRegistration.cs" />
     <Compile Include="Areas\Generic\Controllers\DefaultController.cs" />
-    <Compile Include="Areas\Manual_Distribuidores\AreaRegistration.cs" />
-    <Compile Include="Areas\Manual_Distribuidores\Controllers\DefaultController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -478,11 +478,32 @@
     <None Include="Areas\Generic\Content\js\_references.js" />
     <Content Include="Areas\Generic\Content\css\site.css" />
     <Content Include="Areas\Generic\favicon.ico" />
-    <Content Include="Areas\Manual_Distribuidores\Views\Default\Afiliación\Creacion_cuenta.cshtml" />
-    <Content Include="Areas\Manual_Distribuidores\Views\Default\Afiliación\Afiliacion.cshtml" />
-    <None Include="Areas\Manual_Distribuidores\Content\js\_references.js" />
-    <Content Include="Areas\Manual_Distribuidores\Content\css\site.css" />
-    <Content Include="Areas\Manual_Distribuidores\favicon.ico" />
+    <Content Include="Areas\Reseller\.bowerrc">
+      <DependentUpon>bower.json</DependentUpon>
+    </Content>
+    <Content Include="Areas\Reseller\.gitattributes" />
+    <Content Include="Areas\Reseller\.gitignore" />
+    <Content Include="Areas\Reseller\Content\css\site.css" />
+    <None Include="Areas\Reseller\Content\js\_references.js" />
+    <Content Include="Areas\Reseller\Content\img\captures\Imagen 1.jpg" />
+    <Content Include="Areas\Reseller\Content\img\captures\imagen 10.png" />
+    <Content Include="Areas\Reseller\Content\img\captures\imagen 11.png" />
+    <Content Include="Areas\Reseller\Content\img\captures\imagen 12.png" />
+    <Content Include="Areas\Reseller\Content\img\captures\imagen 13.png" />
+    <Content Include="Areas\Reseller\Content\img\captures\imagen 14.png" />
+    <Content Include="Areas\Reseller\Content\img\captures\imagen 15.png" />
+    <Content Include="Areas\Reseller\Content\img\captures\imagen 18.png" />
+    <Content Include="Areas\Reseller\Content\img\captures\imagen 19.png" />
+    <Content Include="Areas\Reseller\Content\img\captures\imagen 2.jpg" />
+    <Content Include="Areas\Reseller\Content\img\captures\imagen 20.png" />
+    <Content Include="Areas\Reseller\Content\img\captures\imagen 21.png" />
+    <Content Include="Areas\Reseller\Content\img\captures\imagen 3.jpg" />
+    <Content Include="Areas\Reseller\Content\img\captures\imagen 5.jpg" />
+    <Content Include="Areas\Reseller\Content\img\captures\imagen 6.jpg" />
+    <Content Include="Areas\Reseller\Content\img\captures\imagen 7.png" />
+    <Content Include="Areas\Reseller\Content\img\captures\imagen 8.png" />
+    <Content Include="Areas\Reseller\Content\img\captures\imagen 9.png" />
+    <Content Include="Areas\Reseller\favicon.ico" />
     <Content Include="Content\css\bootstrap-11292.css" />
     <Content Include="Content\css\default.cd-top.css" />
     <Content Include="Content\img\cd-top-arrow.svg" />
@@ -512,9 +533,7 @@
     <Folder Include="Areas\GanSoftPro\Views\Shared\" />
     <Folder Include="Areas\Generic\Content\img\" />
     <Folder Include="Areas\Generic\Views\Shared\" />
-    <Folder Include="Areas\Manual_Distribuidores\Content\img\" />
-    <Folder Include="Areas\Manual_Distribuidores\Views\Default\Pendientes\" />
-    <Folder Include="Areas\Manual_Distribuidores\Views\Shared\" />
+    <Folder Include="Areas\Reseller\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bower.json" />
@@ -618,22 +637,20 @@
     <Content Include="Areas\Generic\.bowerrc">
       <DependentUpon>bower.json</DependentUpon>
     </Content>
-    <Content Include="Areas\Manual_Distribuidores\Views\Default\index.cshtml" />
-    <Content Include="Areas\Manual_Distribuidores\Content\manifest.json" />
-    <Content Include="Areas\Manual_Distribuidores\.gitattributes" />
-    <Content Include="Areas\Manual_Distribuidores\.gitignore" />
-    <Content Include="Areas\Manual_Distribuidores\bower.json" />
-    <Content Include="Areas\Manual_Distribuidores\.bowerrc">
-      <DependentUpon>bower.json</DependentUpon>
-    </Content>
-    <Content Include="Areas\Manual_Distribuidores\CHANGELOG.md" />
-    <Content Include="Areas\Manual_Distribuidores\README.md" />
-    <Content Include="Areas\Manual_Distribuidores\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\Manual_Distribuidores\Views\web.config" />
-    <Content Include="Areas\Manual_Distribuidores\Views\Default\Distribución\Distribucion.cshtml" />
-    <Content Include="Areas\Manual_Distribuidores\Views\Default\Distribución\Movimientos.cshtml" />
-    <Content Include="Areas\Manual_Distribuidores\Views\Default\Distribución\Distribuidores.cshtml" />
-    <Content Include="Areas\Manual_Distribuidores\Views\Default\Operaciones\Operaciones.cshtml" />
+    <Content Include="Areas\Reseller\bower.json" />
+    <Content Include="Areas\Reseller\CHANGELOG.md" />
+    <Content Include="Areas\Reseller\Content\manifest.json" />
+    <Content Include="Areas\Reseller\README.md" />
+    <Content Include="Areas\Reseller\Views\Default\Index.cshtml" />
+    <Content Include="Areas\Reseller\Views\web.config" />
+    <Content Include="Areas\Reseller\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Reseller\Views\Default\Afiliación\Afiliacion.cshtml" />
+    <Content Include="Areas\Reseller\Views\Default\Afiliación\Creacion_cuenta.cshtml" />
+    <Content Include="Areas\Reseller\Views\Default\Distribución\Distribucion.cshtml" />
+    <Content Include="Areas\Reseller\Views\Default\Distribución\Distribuidores.cshtml" />
+    <Content Include="Areas\Reseller\Views\Default\Distribución\Movimientos.cshtml" />
+    <Content Include="Areas\Reseller\Views\Default\Operaciones\Operaciones.cshtml" />
+    <Content Include="Areas\Reseller\Views\Default\Pendientes\Pendientes.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Navbar.cshtml" />
     <Content Include="Views\Shared\_Sidebar.cshtml" />
@@ -657,7 +674,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>59879</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/Help</IISUrl>
+          <IISUrl>http://localhost:8080/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
