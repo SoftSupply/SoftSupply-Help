@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Afiliacion";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Manual de distribuidores {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Ahora nos dispondremos a explicar cómo solicitar ser distribuidor partiendo de la cuenta previamente creada.
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#Solicitud">Solicitud</a>
+            </li>
+            <li>
+                <a href="#Autorizacion">Autorización</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Solicitud">Solicitud</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Con esto realizado en la barra de menú dirígete a la sección desplegable de “Solicitudes”, al ubicar el cursor sobre esta presionamos para que se despliegue y hacemos clic en la opción “Distribuidor”
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Manual_Distribuidores/Content/img/imagen 6.jpg" class="thumbnail" data-lightbox="Solicitud Distribuidor" data-title="Solicitud Distribuidor">
+                    <img class="img-responsive" src="~/Areas/Manual_Distribuidores/Content/img/imagen 6.jpg" alt="Solicitud Distribuidor" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Esto mostrará el formulario de solicitud para ser distribuidor autorizado, el cual tras completarlo en su totalidad debemos confirmar el Captcha en el checkbox y hacer clic en “Confirmar”
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Manual_Distribuidores/Content/img/imagen 7.png" class="thumbnail" data-lightbox="Solicitud Distribuidor Llena" data-title="Solicitud Distribuidor Llena">
+                    <img class="img-responsive" src="~/Areas/Manual_Distribuidores/Content/img/imagen 7.png" alt="Solicitud Distribuidor Llena" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    lo cual nos redirigirá a una página de confirmación que demuestra que nuestra solicitud se realizó de manera exitosa
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Autorizacion">Autorización</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Tras esto, deberá esperar a ser contactado por el equipo de TDPro C.A. en su casa matriz, el cual tras evaluarlos los autorizará como distribuidores de los productos generados por nuestra casa de desarrollo. Con lo cual ya será parte de nuestra comunidad de distribuidores autorizados.
+                </p>
+            </div>
+        </div>
+    </div>
+</article>

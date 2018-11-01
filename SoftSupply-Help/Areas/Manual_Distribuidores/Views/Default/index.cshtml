@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Bienvenido";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Manual Distribuidores {ViewBag.Manifest.Title}";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        @Html.Partial("_Title")
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            Si te encuentras en esta sección es porque deseas formar parte de la familia TDPro ¡eso nos complace muchísimo!     
+        </p>
+    </div>
+    <div class="col-md-2 text-center">
+        <img class="img-responsive" src="~/Areas/GanSoftPro/Content/img/logo.png" alt="Logo" />
+    </div>
+    @*TODO - diseñar imagen TDPro/softsupply*@
+    <div class="col-md-10">
+        <p>
+            Aquí encontraras una guía que te orientará durante todo el camino a trabajar juntos, comenzaremos con la creación de la cuenta, luego una descripción de todo lo que podrás realizar desde nuestra plataforma y asesoramiento de cómo proceder durante tus negocios con nuestros productos aprovechando todas nuestras herramientas.
+        </p>
+    </div>
+</div>

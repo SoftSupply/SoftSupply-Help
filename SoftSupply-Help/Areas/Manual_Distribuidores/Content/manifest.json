@@ -1,0 +1,100 @@
+﻿//TODO - Agregar los links
+{
+  "Name": "Distribuidores TDPro",
+  "Title": "TDPro",
+  "Description": "Manual para distribuidores de los productos de TDPro C.A. en el manejo del portal",
+  "Index": [
+    {
+      "Title": "<b>Afiliación</b>",
+      "Items": [
+        {
+          "Title": "Creacion de cuenta",
+          "Link": ""
+        },
+        {
+          "Title": "Afiliación",
+          "Link": ""
+        }
+      ]
+    },
+    {
+      "Title": "<b>Distribución</b>",
+      "Items": [
+        {
+          "Title": "Distribución",
+          "Link": ""
+        },
+        {
+          "Title": "Movimientos",
+          "Link": ""
+        },
+        {
+          "Title": "Distribuidores",
+          "Link": ""
+        }
+      ]
+    },
+    {
+      "Title": "<b>Operaciones</b>",
+      "Items": [
+        {
+          "Title": "Operaciones",
+          "Link": ""
+        },
+        {
+          "Title": "Compra de puntos",
+          "Link": ""
+        },
+        {
+          "Title": "Venta de puntos",
+          "Link": ""
+        },
+        {
+          "Title": "Venta de productos",
+          "Link": ""
+        },
+        {
+          "Title": "Patrocinar distribuidor",
+          "Link": ""
+        }
+      ]
+    },
+    {
+      "Title": "<b>Pendientes</b>",
+      "Items": [
+        {
+          "Title": "Pendientes",
+          "Link": ""
+        },
+        {
+          "Title": "Compra de puntos",
+          "Link": ""
+        },
+        {
+          "Title": "Venta de puntos",
+          "Link": ""
+        },
+        {
+          "Title": "Venta de productos",
+          "Link": ""
+        },
+        {
+          "Title": "Distribuidores patrocinados",
+          "Link": ""
+        }
+      ]
+    }
+  ]
+}
+//,    {
+//      "Title": "<i class='fa fa-google' style='margin-right: 8px;'></i>Google",
+//      "Link": "http://www.google.com/",
+//      "Target": "_blank"
+//    },
+//    {
+//      "Title": "<i class='fa fa-arrow-left' style='margin-right: 8px;'></i>Volver",
+//      "Link": "/",
+//      "Class": "alert alert-warning"
+//    }
+//  ]
+//}

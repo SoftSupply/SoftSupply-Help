@@ -1,0 +1,35 @@
+{
+  "ignore": [
+    "*/.*",
+    "*.json",
+    "*.md",
+    "src",
+    "builder"
+  ],
+  "version": "1.1.0",
+  "name": "font-gansoft",
+  "license": [
+    "MIT"
+  ],
+  "authors": [
+    "Enner Perez <ennerperez@gmail.com>"
+  ],
+  "keywords": [
+    "font, gansoft, fontgansoft, icon, font, bootstrap"
+  ],
+  "main": [
+    "less/font-gansoft.less",
+    "scss/font-gansoft.scss"
+  ],
+  "homepage": "https://github.com/softsupply/font-gansoft",
+  "description": "The GanSoft iconic font and CSS framework",
+  "_release": "1.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.1.0",
+    "commit": "2ca1453d2ab6a0b7467a8cb6718bcd3a2a61d134"
+  },
+  "_source": "https://github.com/SoftSupply/Font-GanSoft.git",
+  "_target": "^1.1.0",
+  "_originalSource": "font-gansoft"
+}

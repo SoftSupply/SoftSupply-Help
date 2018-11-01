@@ -1,0 +1,1109 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cake.Bower</name>
+    </assembly>
+    <members>
+        <member name="T:Cake.Bower.BowerCacheSettings">
+            <summary>
+            Bower cache settings
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerCacheSettings.#ctor">
+            <summary>
+            Bower cache settings
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerCacheSettings.EvaluateCore(Cake.Core.IO.ProcessArgumentBuilder)">
+            <summary>
+            Evaluate options
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="T:Cake.Bower.BowerCacheSettings.SubCommandTypes">
+            <summary>
+            Valid subcommands for the cache command
+            </summary>
+        </member>
+        <member name="F:Cake.Bower.BowerCacheSettings.SubCommandTypes.None">
+            <summary>
+            No subcommand to be applied
+            </summary>
+        </member>
+        <member name="F:Cake.Bower.BowerCacheSettings.SubCommandTypes.Clean">
+            <summary>
+            Apply the "clean" subcommand
+            </summary>
+        </member>
+        <member name="F:Cake.Bower.BowerCacheSettings.SubCommandTypes.List">
+            <summary>
+            Apply the "list" subcommand
+            </summary>
+        </member>
+        <member name="P:Cake.Bower.BowerCacheSettings.SubCommand">
+            <summary>
+            The subcommand to apply
+            </summary>
+        </member>
+        <member name="P:Cake.Bower.BowerCacheSettings.Package">
+            <summary>
+            Name of the package to use. See https://bower.io/docs/api/#install for details
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerCacheSettings.Clean">
+            <summary>
+            Apply the "clean" subcommand
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.BowerCacheSettings.List">
+            <summary>
+            Apply the "list" subcommand
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.BowerCacheSettings.WithPackage(System.String)">
+            <summary>
+            Package to perform the command on
+            </summary>
+        </member>
+        <member name="T:Cake.Bower.BowerHelpSettings">
+            <summary>
+            Bower help settings
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerHelpSettings.#ctor">
+            <summary>
+            Bower help settings
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerHelpSettings.#ctor(System.String)">
+            <summary>
+            Bower help settings
+            </summary>
+            <param name="commandName"></param>
+        </member>
+        <member name="M:Cake.Bower.BowerHelpSettings.EvaluateCore(Cake.Core.IO.ProcessArgumentBuilder)">
+            <summary>
+            Evaluate options
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="P:Cake.Bower.BowerHelpSettings.CommandName">
+            <summary>
+            The command to get help for
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerHelpSettings.ForCommand(System.String)">
+            <summary>
+            Set the command to get help for
+            </summary>
+            <param name="commandName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cake.Bower.BowerHomeSettings">
+            <summary>
+            Bower home settings
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerHomeSettings.#ctor">
+            <summary>
+            Bower home settings
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerHomeSettings.#ctor(System.String)">
+            <summary>
+            Bower home settings
+            </summary>
+            <param name="package"></param>
+        </member>
+        <member name="M:Cake.Bower.BowerHomeSettings.EvaluateCore(Cake.Core.IO.ProcessArgumentBuilder)">
+            <summary>
+            Evaluate options
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="P:Cake.Bower.BowerHomeSettings.Package">
+            <summary>
+            The package to open the home page of
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerHomeSettings.ForPackage(System.String)">
+            <summary>
+            Set the package to open the home page of
+            </summary>
+            <param name="package"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cake.Bower.BowerInfoSettings">
+            <summary>
+            Bower info settings
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerInfoSettings.#ctor">
+            <summary>
+            Bower info settings
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerInfoSettings.EvaluateCore(Cake.Core.IO.ProcessArgumentBuilder)">
+            <summary>
+            Evaluate options
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="P:Cake.Bower.BowerInfoSettings.Package">
+            <summary>
+            The package to get info for
+            </summary>
+        </member>
+        <member name="P:Cake.Bower.BowerInfoSettings.Property">
+            <summary>
+            The property to get the info of
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerInfoSettings.ForPackage(System.String)">
+            <summary>
+            Set the command to get info for
+            </summary>
+            <param name="commandName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.BowerInfoSettings.ForProperty(System.String)">
+            <summary>
+            The property to get the info for
+            </summary>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cake.Bower.BowerInstallSettings">
+            <summary>
+            Bower install settings
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerInstallSettings.#ctor">
+            <summary>
+            Bower install settings
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerInstallSettings.EvaluateCore(Cake.Core.IO.ProcessArgumentBuilder)">
+            <summary>
+            Evaluate options
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Cake.Bower.BowerInstallSettings.WithPackage(System.String)">
+            <summary>
+            Name of the package to use. See https://bower.io/docs/api/#install for details
+            </summary>
+            <param name="package"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.BowerInstallSettings.WithSave(System.Boolean)">
+            <summary>
+            Applies the --save parameter
+            </summary>
+            <param name="enabled"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.BowerInstallSettings.WithSaveDev(System.Boolean)">
+            <summary>
+            Applies the --save-dev parameter
+            </summary>
+            <param name="enabled"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.BowerInstallSettings.WithSaveExact(System.Boolean)">
+            <summary>
+            Applies the --save-exact parameter
+            </summary>
+            <param name="enabled"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.BowerInstallSettings.WithForceLatest(System.Boolean)">
+            <summary>
+            Applies the --force-latest parameter
+            </summary>
+            <param name="enabled"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.BowerInstallSettings.ForProduction(System.Boolean)">
+            <summary>
+            Applies the --production parameter
+            </summary>
+            <param name="enabled"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Cake.Bower.BowerInstallSettings.Package">
+            <summary>
+            Package to install
+            See https://bower.io/docs/api/#install for details on package format
+            </summary>
+        </member>
+        <member name="P:Cake.Bower.BowerInstallSettings.Save">
+            <summary>
+            Save installed packages into the project’s bower.json dependencies
+            </summary>
+        </member>
+        <member name="P:Cake.Bower.BowerInstallSettings.SaveDev">
+            <summary>
+            Save installed packages into the project’s bower.json devDependencies
+            </summary>
+        </member>
+        <member name="P:Cake.Bower.BowerInstallSettings.SaveExact">
+            <summary>
+            Configure installed packages with an exact version rather than semver
+            </summary>
+        </member>
+        <member name="P:Cake.Bower.BowerInstallSettings.ForceLatest">
+            <summary>
+            Force latest version on conflict
+            </summary>
+        </member>
+        <member name="P:Cake.Bower.BowerInstallSettings.Production">
+            <summary>
+            Do not install project devDependencies
+            </summary>
+        </member>
+        <member name="T:Cake.Bower.BowerLinkSettings">
+            <summary>
+            Bower link settings
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerLinkSettings.#ctor">
+            <summary>
+            Bower link settings
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerLinkSettings.EvaluateCore(Cake.Core.IO.ProcessArgumentBuilder)">
+            <summary>
+            Evaluate options
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="P:Cake.Bower.BowerLinkSettings.Name">
+            <summary>
+            Name of the folder to link to
+            </summary>
+        </member>
+        <member name="P:Cake.Bower.BowerLinkSettings.LocalName">
+            <summary>
+            LocalName
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerLinkSettings.WithName(System.String)">
+            <summary>
+            Set the name to link to
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.BowerLinkSettings.WithLocalName(System.String)">
+            <summary>
+            Set the local name
+            </summary>
+            <param name="localName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cake.Bower.BowerListSettings">
+            <summary>
+            Bower list settings
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerListSettings.#ctor">
+            <summary>
+            Bower list settings
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerListSettings.EvaluateCore(Cake.Core.IO.ProcessArgumentBuilder)">
+            <summary>
+            Evaluate options
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="P:Cake.Bower.BowerListSettings.Paths">
+            <summary>
+            Generates a simple JSON source mapping
+            </summary>
+        </member>
+        <member name="P:Cake.Bower.BowerListSettings.Relative">
+            <summary>
+            Make paths relative to the directory config property, which defaults to bower_components
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerListSettings.WithPaths">
+            <summary>
+            Generates a simple JSON source mapping
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.BowerListSettings.WithRelative">
+            <summary>
+            Make paths relative to the directory config property, which defaults to bower_components
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Cake.Bower.BowerLoginSettings">
+            <summary>
+            Bower login settings
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerLoginSettings.#ctor">
+            <summary>
+            Bower login settings
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerLoginSettings.#ctor(System.String)">
+            <summary>
+            Bower login settings
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerLoginSettings.EvaluateCore(Cake.Core.IO.ProcessArgumentBuilder)">
+            <summary>
+            Evaluate options
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="P:Cake.Bower.BowerLoginSettings.Token">
+            <summary>
+            Pass an existing GitHub auth token rather than prompting for username and password
+            </summary>
+        </member>
+        <member name="T:Cake.Bower.BowerLogLevel">
+            <summary>
+            Levels of logs to report
+            </summary>
+        </member>
+        <member name="F:Cake.Bower.BowerLogLevel.None">
+            <summary>
+            No value
+            </summary>
+        </member>
+        <member name="F:Cake.Bower.BowerLogLevel.Error">
+            <summary>
+            Only output errors
+            </summary>
+        </member>
+        <member name="F:Cake.Bower.BowerLogLevel.Conflict">
+            <summary>
+            Conflict
+            </summary>
+        </member>
+        <member name="F:Cake.Bower.BowerLogLevel.Warn">
+            <summary>
+            Warn
+            </summary>
+        </member>
+        <member name="F:Cake.Bower.BowerLogLevel.Action">
+            <summary>
+            Action
+            </summary>
+        </member>
+        <member name="F:Cake.Bower.BowerLogLevel.Info">
+            <summary>
+            Info
+            </summary>
+        </member>
+        <member name="F:Cake.Bower.BowerLogLevel.Debug">
+            <summary>
+            Debug
+            </summary>
+        </member>
+        <member name="T:Cake.Bower.BowerOptions">
+            <summary>
+            Bower command options
+            </summary>
+        </member>
+        <member name="T:Cake.Bower.BowerOptions.List">
+            <summary>
+            bower list options
+            </summary>
+        </member>
+        <member name="F:Cake.Bower.BowerOptions.List.Paths">
+            <summary>
+            Paths switch
+            </summary>
+        </member>
+        <member name="F:Cake.Bower.BowerOptions.List.Relative">
+            <summary>
+            Relative switch
+            </summary>
+        </member>
+        <member name="T:Cake.Bower.BowerOptions.Login">
+            <summary>
+            bower login options
+            </summary>
+        </member>
+        <member name="F:Cake.Bower.BowerOptions.Login.Token">
+            <summary>
+            Login switch
+            </summary>
+        </member>
+        <member name="T:Cake.Bower.BowerPruneSettings">
+            <summary>
+            Bower prune settings
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerPruneSettings.#ctor">
+            <summary>
+            Bower prune settings
+            </summary>
+        </member>
+        <member name="T:Cake.Bower.BowerRunner">
+            <summary>
+            A wrapper around the Bower package manager
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.#ctor(Cake.Core.IO.IFileSystem,Cake.Core.ICakeEnvironment,Cake.Core.IO.IProcessRunner,Cake.Core.Tooling.IToolLocator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Cake.Bower.BowerRunner" /> class.
+            </summary>
+            <param name="fileSystem">The file system</param>
+            <param name="environment">The environment</param>
+            <param name="processRunner">The process runner</param>
+            <param name="toolLocator">The tool locator</param>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.GetToolName">
+            <summary>
+            Gets the name of the tool
+            </summary>
+            <returns>the name of the tool</returns>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.GetToolExecutableNames">
+            <summary>
+            Gets the name of the tool executable
+            </summary>
+            <returns>The tool executable name</returns>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.Install(System.Action{Cake.Bower.BowerInstallSettings})">
+            <summary>
+            execute 'bower install' with options
+            </summary>
+            <param name="configure">options when running 'bower install'</param>
+            <example>
+            <para>Run 'bower install'</para>
+            <code>
+            <![CDATA[
+            Task("Bower-FromPath")
+                .Does(() =>
+            {
+                Bower.Install(s => s.UseWorkingDirectory("./dir-with-bower.json/");
+            });
+            ]]>
+            </code>
+            <para>Run 'bower install'</para>
+            <code>
+            <![CDATA[
+            Task("Bower-Install")
+                .Does(() =>
+            {
+                Bower.Install();
+            });
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.Install(Cake.Bower.BowerInstallSettings)">
+            <summary>
+            execute 'bower install' with options
+            </summary>
+            <param name="settings">options when running 'bower install'</param>
+            <example>
+            <para>Run 'bower install'</para>
+            <code>
+            <![CDATA[
+            Task("Bower")
+                .Does(() =>
+            {
+                var settings = new BowerInstallSettings()
+                    .WithSave()
+                    .ForProduction();
+                Bower.Install(settings));
+            });
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.Install(System.String,System.Action{Cake.Bower.BowerInstallSettings})">
+            <summary>
+            execute 'bower install' for a particular package
+            </summary>
+            <param name="package">endpoint/package to install when using 'bower install'</param>
+            <param name="configure">options when running 'bower install'</param>
+            <example>
+            <para>Run 'bower install'</para>
+            <code>
+            <![CDATA[
+            Task("Bower")
+                .Does(() =>
+            {
+                Bower.Install("jquery"));
+            });
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.Install(System.String,Cake.Bower.BowerInstallSettings)">
+            <summary>
+            execute 'bower install' for a particular package
+            </summary>
+            <param name="package">endpoint/package to install when using 'bower install'</param>
+            <param name="settings">options when running 'bower install'</param>
+            <example>
+            <para>Run 'bower install'</para>
+            <code>
+            <![CDATA[
+            Task("Bower")
+                .Does(() =>
+            {
+                var settings = new BowerInstallSettings();
+                settings.WithSave();
+                Bower.Install("jquery", settings));
+            });
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.Cache(System.Action{Cake.Bower.BowerCacheSettings})">
+            <summary>
+            execute 'bower cache' for a particular package
+            </summary>
+            <param name="configure">options when running 'bower cache'</param>
+            <example>
+            <para>Run 'bower cache'</para>
+            <code>
+            <![CDATA[
+            Task("Bower")
+                .Does(() =>
+            {
+                Bower.Cache(s => s.Clean()));
+            });
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.Cache(Cake.Bower.BowerCacheSettings)">
+            <summary>
+            execute 'bower cache' for a particular package
+            </summary>
+            <param name="settings">options when running 'bower cache'</param>
+            <example>
+            <para>Run 'bower cache'</para>
+            <code>
+            <![CDATA[
+            Task("Bower")
+                .Does(() =>
+            {
+                var settings = new BowerCacheSettings();
+                settings.Clean();
+                Bower.Install(settings));
+            });
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.Help(System.String)">
+            <summary>
+            execute 'bower help' for a particular package
+            </summary>
+            <param name="command"></param>
+            <example>
+            <para>Run 'bower help'</para>
+            <code>
+            <![CDATA[
+            Task("Bower")
+                .Does(() =>
+            {
+                Bower.Help("install"));
+            });
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.Home(System.String)">
+            <summary>
+            execute 'bower home' for a particular package
+            </summary>
+            <param name="package"></param>
+            <example>
+            <para>Run 'bower home'</para>
+            <code>
+            <![CDATA[
+            Task("Bower")
+                .Does(() =>
+            {
+                Bower.Home("jquery"));
+            });
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.Info(System.String,System.String)">
+            <summary>
+            execute 'bower info' for a particular package
+            </summary>
+            <param name="package"></param>
+            <param name="property"></param>
+            <example>
+            <para>Run 'bower info'</para>
+            <code>
+            <![CDATA[
+            Task("Bower")
+                .Does(() =>
+            {
+                Bower.Info("jquery", "main"));
+            });
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.Info(System.Action{Cake.Bower.BowerInfoSettings})">
+            <summary>
+            execute 'bower info' for a particular package
+            </summary>
+            <example>
+            <param name="configure"></param>
+            <para>Run 'bower info'</para>
+            <code>
+            <![CDATA[
+            Task("Bower")
+                .Does(() =>
+            {
+                Bower.Info(s => s.ForPackage("jquery"));
+            });
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.Info(Cake.Bower.BowerInfoSettings)">
+            <summary>
+            execute 'bower info' for a particular package
+            </summary>
+            <example>
+            <param name="settings"></param>
+            <para>Run 'bower info'</para>
+            <code>
+            <![CDATA[
+            Task("Bower")
+                .Does(() =>
+            {
+                var settings = new BowerInfoSettings().ForPackage("jquery");
+                Bower.Info(settings);
+            });
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.Link(System.Action{Cake.Bower.BowerLinkSettings})">
+            <summary>
+            execute 'bower link'
+            </summary>
+            <example>
+            <param name="configure"></param>
+            <para>Run 'bower link'</para>
+            <code>
+            <![CDATA[
+            Task("Bower")
+                .Does(() =>
+            {
+                Bower.Link(s => s.UseWorkingDirectory("./folder/").WithName("jquery");
+            });
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.Link(Cake.Bower.BowerLinkSettings)">
+            <summary>
+            execute 'bower link'
+            </summary>
+            <example>
+            <param name="settings"></param>
+            <para>Run 'bower link'</para>
+            <code>
+            <![CDATA[
+            Task("Bower")
+                .Does(() =>
+            {
+                var settings = new BowerLinkSettings().WithName("jquery");
+                Bower.Link(settings);
+            });
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.List(System.Action{Cake.Bower.BowerListSettings})">
+            <summary>
+            execute 'bower list'
+            </summary>
+            <example>
+            <param name="configure"></param>
+            <para>Run 'bower list'</para>
+            <code>
+            <![CDATA[
+            Task("Bower")
+                .Does(() =>
+            {
+                Bower.List(s => s.WithPaths());
+            });
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.List(Cake.Bower.BowerListSettings)">
+            <summary>
+            execute 'bower list'
+            </summary>
+            <example>
+            <param name="settings"></param>
+            <para>Run 'bower list'</para>
+            <code>
+            <![CDATA[
+            Task("Bower")
+                .Does(() =>
+            {
+                var settings = new BowerListSettings().WithPaths();
+                Bower.List(settings);
+            });
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.Login(System.String)">
+            <summary>
+            execute 'bower login'
+            </summary>
+            <example>
+            <param name="token"></param>
+            <para>Run 'bower login'</para>
+            <code>
+            <![CDATA[
+            Task("Bower")
+                .Does(() =>
+            {
+                Bower.Login("a2eb43af648042a1b376d296dda551d4");
+            });
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.Prune">
+            <summary>
+            execute 'bower prune'
+            </summary>
+            <example>
+            <para>Run 'bower prune'</para>
+            <code>
+            <![CDATA[
+            Task("Bower")
+                .Does(() =>
+            {
+                Bower.Prune();
+            });
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.Run``1(System.Action{``0})">
+            <summary>
+            Generic runner using settings configurator
+            </summary>
+            <typeparam name="TSettings"></typeparam>
+            <param name="configure"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.BowerRunner.Run``1(``0)">
+            <summary>
+            Generic runner using settings
+            </summary>
+            <typeparam name="TSettings"></typeparam>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cake.Bower.BowerRunnerAliases">
+            <summary>
+            Provides a wrapper around Bower functionality within a Cake build script
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerRunnerAliases.Bower(Cake.Core.ICakeContext)">
+            <summary>
+            Get a Bower runner
+            </summary>
+            <param name="context">The context</param>
+            <returns></returns>
+            <example>
+            <para>Run 'bower install'</para>
+            <para>Cake task:</para>
+            <code>
+            <![CDATA[
+            Task("Bower-FromPath")
+                .Does(() =>
+            {
+                Bower.FromPath("./dir-with-bowerjson").Install();
+            });
+            ]]>
+            </code>
+            <para>Run 'bower install'</para>
+            <para>Cake task:</para>
+            <code>
+            <![CDATA[
+            Task("Bower-Install")
+                .Does(() =>
+            {
+                Bower.Install();
+            });
+            ]]>
+            </code>
+            </example>
+        </member>
+        <member name="T:Cake.Bower.BowerRunnerSettings">
+            <summary>
+            Bower runner settings
+            </summary>
+        </member>
+        <member name="F:Cake.Bower.BowerRunnerSettings.Command">
+            <summary>
+            The command to run
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerRunnerSettings.#ctor(System.String)">
+            <summary>
+            Bower runner settings
+            </summary>
+            <param name="command"></param>
+        </member>
+        <member name="M:Cake.Bower.BowerRunnerSettings.EvaluateCore(Cake.Core.IO.ProcessArgumentBuilder)">
+            <summary>
+            Evaluate options
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="P:Cake.Bower.BowerRunnerSettings.Force">
+            <summary>
+            Makes various commands more forceful
+            </summary>
+        </member>
+        <member name="P:Cake.Bower.BowerRunnerSettings.Json">
+            <summary>
+            Output consumable JSON
+            </summary>
+        </member>
+        <member name="P:Cake.Bower.BowerRunnerSettings.LogLevel">
+            <summary>
+            What level of logs to report
+            </summary>
+        </member>
+        <member name="P:Cake.Bower.BowerRunnerSettings.Offline">
+            <summary>
+            Do not use network connection
+            </summary>
+        </member>
+        <member name="P:Cake.Bower.BowerRunnerSettings.Quiet">
+            <summary>
+            Only output important information. It is an alias for --loglevel=warn
+            </summary>
+        </member>
+        <member name="P:Cake.Bower.BowerRunnerSettings.Silent">
+            <summary>
+            Do not output anything, besides errors. It is an alias for --loglevel=error
+            </summary>
+        </member>
+        <member name="P:Cake.Bower.BowerRunnerSettings.Verbose">
+            <summary>
+            Makes output more verbose. It is an alias for --loglevel=debug
+            </summary>
+        </member>
+        <member name="P:Cake.Bower.BowerRunnerSettings.AllowRoot">
+            <summary>
+            Allows running commands as root
+            </summary>
+        </member>
+        <member name="T:Cake.Bower.BowerRunnerSettingsExtensions">
+            <summary>
+            Bower runner settings extensions
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.BowerRunnerSettingsExtensions.UseWorkingDirectory``1(``0,Cake.Core.IO.DirectoryPath)">
+            <summary>
+            Set the working directory for the bower runner settings
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="settings"></param>
+            <param name="directory"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.BowerRunnerSettingsExtensions.WithForce``1(``0)">
+            <summary>
+            Add --force to the bower command
+            </summary>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.BowerRunnerSettingsExtensions.WithJson``1(``0)">
+            <summary>
+            Add --json
+            </summary>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.BowerRunnerSettingsExtensions.WithLogLevel``1(``0,Cake.Bower.BowerLogLevel)">
+            <summary>
+            Sets the log level e.g. --loglevel=warn
+            </summary>
+            <param name="settings"></param>
+            <param name="logLevel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.BowerRunnerSettingsExtensions.WithOffline``1(``0)">
+            <summary>
+            Add --offline
+            </summary>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.BowerRunnerSettingsExtensions.WithQuiet``1(``0)">
+            <summary>
+            Add --quiet
+            </summary>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.BowerRunnerSettingsExtensions.WithSilent``1(``0)">
+            <summary>
+            Add --silent
+            </summary>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.BowerRunnerSettingsExtensions.WithVerbose``1(``0)">
+            <summary>
+            Add --verbose
+            </summary>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.BowerRunnerSettingsExtensions.WithAllowRoot``1(``0)">
+            <summary>
+            Add --allow-root
+            </summary>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cake.Bower.IBowerRunnerCommands">
+            <summary>
+            Bower runner command interface
+            </summary>
+        </member>
+        <member name="M:Cake.Bower.IBowerRunnerCommands.Install(System.Action{Cake.Bower.BowerInstallSettings})">
+            <summary>
+            execute 'bower install' with options
+            </summary>
+            <param name="configure">options when running 'bower install'</param>
+        </member>
+        <member name="M:Cake.Bower.IBowerRunnerCommands.Install(Cake.Bower.BowerInstallSettings)">
+            <summary>
+            execute 'bower install' with options
+            </summary>
+            <param name="settings">options when running 'bower install'</param>
+        </member>
+        <member name="M:Cake.Bower.IBowerRunnerCommands.Install(System.String,System.Action{Cake.Bower.BowerInstallSettings})">
+            <summary>
+            execute 'bower install' with options
+            </summary>
+            <param name="package">endpoint/package to install</param>
+            <param name="configure">options when running 'bower install'</param>
+        </member>
+        <member name="M:Cake.Bower.IBowerRunnerCommands.Install(System.String,Cake.Bower.BowerInstallSettings)">
+            <summary>
+            execute 'bower install' with options
+            </summary>
+            <param name="package">endpoint/package to install</param>
+            /// <param name="settings">options when running 'bower install'</param>
+        </member>
+        <member name="M:Cake.Bower.IBowerRunnerCommands.Cache(System.Action{Cake.Bower.BowerCacheSettings})">
+            <summary>
+            execute 'bower cache' with options
+            </summary>
+            <param name="configure"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.IBowerRunnerCommands.Cache(Cake.Bower.BowerCacheSettings)">
+            <summary>
+            execute 'bower cache' with options
+            </summary>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.IBowerRunnerCommands.Help(System.String)">
+            <summary>
+            execute 'bower help'
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.IBowerRunnerCommands.Home(System.String)">
+            <summary>
+            execute 'bower home'
+            </summary>
+            <param name="package"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.IBowerRunnerCommands.Info(System.String,System.String)">
+            <summary>
+            execute 'bower info'
+            </summary>
+            <param name="package"></param>
+            <param name="property"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.IBowerRunnerCommands.Info(System.Action{Cake.Bower.BowerInfoSettings})">
+            <summary>
+            execute 'bower info'
+            </summary>
+            <param name="configure"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.IBowerRunnerCommands.Info(Cake.Bower.BowerInfoSettings)">
+            <summary>
+            execute 'bower info'
+            </summary>
+            <param name="settings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.IBowerRunnerCommands.Link(System.Action{Cake.Bower.BowerLinkSettings})">
+            <summary>
+            execute 'bower link'
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.IBowerRunnerCommands.Link(Cake.Bower.BowerLinkSettings)">
+            <summary>
+            execute 'bower link'
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.IBowerRunnerCommands.List(System.Action{Cake.Bower.BowerListSettings})">
+            <summary>
+            execute 'bower list'
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.IBowerRunnerCommands.List(Cake.Bower.BowerListSettings)">
+            <summary>
+            execute 'bower list'
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.IBowerRunnerCommands.Login(System.String)">
+            <summary>
+            execute bower login
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cake.Bower.IBowerRunnerCommands.Prune">
+            <summary>
+            execute bower prune
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

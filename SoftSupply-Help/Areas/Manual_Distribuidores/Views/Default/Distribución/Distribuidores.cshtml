@@ -1,0 +1,53 @@
+﻿</@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Distribuidores";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Manual de distribuidores {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Siguiendo en la sección “Distribución” en la segunda opción encontramos “Distribuidores” esta pestaña sirve para gestionar los distribuidores que estas patrocinando, 
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Manual_Distribuidores/Content/img/imagen 12.png " class="thumbnail" data-lightbox="Distribuidores" data-title="Distribuidores">
+                    <img class="img-responsive" src="~/Areas/Manual_Distribuidores/Content/img/imagen 12.png" alt="Distribuidores" />
+                </a>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    además encontramos el botón “Acciones” con un dibujo de un rayo y de color azul en la esquina superior derecha debajo de tu nombre, esta pestaña desplegara el botón “Nuevo distribuidor” que al presionarlo podrá ingresar al formulario para ingresar un nuevo distribuidor al cual patrocinar. 
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Manual_Distribuidores/Content/img/imagen 13.png " class="thumbnail" data-lightbox="Distribuidores" data-title="Distribuidores">
+                    <img class="img-responsive" src="~/Areas/Manual_Distribuidores/Content/img/imagen 13.png" alt="Distribuidores" />
+                </a>
+            </div>
+            <div class="alert alert-info row" role="alert">
+                <div class="col-md-1">
+                    <i class="fa fa-5x fa-info"></i>
+                </div>
+                <div class="col-md-10">
+                    <strong>Importante!</strong><br />
+                    Nota: Como dato debemos aclarar, la distribución de productos de TDPro C.A. no funciona bajo una estructura piramidal, por lo que un distribuidor que patrocine a distribuidores menores no obtendrá remuneración por la venta de sus apadrinados, el beneficio radica en poder optar a mejores descuentos en el canje de productos con puntos al hacer compras más grandes para suministrar a sus distribuidores.
+                </div>
+            </div>
+        </div>
+    </div>
+</article>

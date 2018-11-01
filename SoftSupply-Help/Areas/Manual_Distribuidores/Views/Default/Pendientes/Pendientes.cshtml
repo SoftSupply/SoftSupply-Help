@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = "Pendientes";
+    ViewBag.SubTitle = "";
+    ViewBag.MainTitle = $"Manual de distribuidores {ViewBag.Manifest.Title}";
+}
+
+<article class="row">
+    <div class="col-md-12">
+        <div class="page-header">
+            <h1>
+                @ViewBag.Title
+                @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                {
+                    <br /><small>@ViewBag.SubTitle</small>
+                }
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <p class="lead">
+            La sección pendiente hace referencia a todas las operaciones recientes que se han realizado y aún están en tramitación, por esta vía podrás llevar un control pleno respecto a todas las actividades que hagas, tales como:
+        </p>
+    </div>
+    <div class="col-md-12">
+        <ul class="index">
+            <li>
+                <a href="#CompraP">Compra de Puntos</a>
+            </li>
+            <li>
+                <a href="#VentaP">Venta de Puntos</a>
+            </li>
+            <li>
+                <a href="#VentaProd">Venta de Productos</a>
+            </li>
+            <li>
+                <a href="#Patrocinados">Distribuidores Patrocinados</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-12">
+        <h3 id="CompraP">Compra de Puntos</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Aquí podrás observar en qué etapa se encuentra la tramitación por los puntos adquiridos a la casa matriz, 	una vez realizado el pago y enviada la solicitud aquí podrás ver si la casa matriz ya evaluó tu pedido o en qué etapa del proceso previo a la culminación se encuentra.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Manual_Distribuidores/Content/img/imagen 18.png" class="thumbnail" data-lightbox="Compras Pendientes" data-title="Compras Pendientes">
+                    <img class="img-responsive" src="~/Areas/Manual_Distribuidores/Content/img/imagen 18.png" alt="Compras Pendientes" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="VentaP">Venta de Puntos</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    Al igual que en la compra de puntos, en la venta de puntos podrás revisar la fecha de las transacciones que se están tramitando, el comprador que te compro puntos a ti como distribuidor, la cantidad de puntos y si existe alguna demora, de igual modo, solo se muestran aquellas transacciones previas a su culminación o que están en “Lista de Espera” para su culminación. 
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Manual_Distribuidores/Content/img/imagen 19.png" class="thumbnail" data-lightbox="Ventas Pendientes" data-title="Ventas Pendientes">
+                    <img class="img-responsive" src="~/Areas/Manual_Distribuidores/Content/img/imagen 19.png" alt="Ventas Pendientes" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="VentaProd">Venta de Productos</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    En esta sección puedes observar y llevar en seguimiento todas esas ventas de productos que has realizado, pudiendo observar el código de la transacción, la fecha, el producto o servicio vendido, los puntos que costo el nombre de la empresa a quien se prestó el servicio y el nombre del distribuidor, que en este caso serias tú, además debemos mencionar que esta sección podrás realizar la activación de licencias nuevas de manera manual como el distribuidor que se las vendió, sin embargo, esto presenta la limitante de solo activar una Hacienda con los datos que te suministro el cliente, por otro lado, si desea activar más Haciendas luego, deberá esperar a una posterior activación de la casa matriz. 
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Manual_Distribuidores/Content/img/imagen 20.png" class="thumbnail" data-lightbox="Productos Pendientes" data-title="Productos Pendientes">
+                    <img class="img-responsive" src="~/Areas/Manual_Distribuidores/Content/img/imagen 20.png" alt="Productos Pendientes" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h3 id="Patrocinados">Distribuidores Patrocinados</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <p>
+                    En esta pestaña podrá observar una lista de todos los distribuidores apadrinados que posea, su nombre, su contacto y su patrocinador. Además, en el botón “Acciones” en la esquina superior izquierda podrá ingresar de nuevo en la sección de “Nuevo distribuidor” para patrocinar un nuevo distribuidor. 
+                </p>
+            </div>
+            <div class="col-md-4">
+                <a href="~/Areas/Manual_Distribuidores/Content/img/imagen 21.png" class="thumbnail" data-lightbox="Distribuidores Patrocinados" data-title="Distribuidores Patrocinados">
+                    <img class="img-responsive" src="~/Areas/Manual_Distribuidores/Content/img/imagen 21.png" alt="Distribuidores Patrocinados" />
+                </a>
+            </div>
+        </div>
+    </div>
+</article>
