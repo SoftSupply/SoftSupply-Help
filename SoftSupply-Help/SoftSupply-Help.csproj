@@ -128,6 +128,8 @@
     <Compile Include="Areas\GanSoftPro\Controllers\DefaultController.cs" />
     <Compile Include="Areas\Generic\AreaRegistration.cs" />
     <Compile Include="Areas\Generic\Controllers\DefaultController.cs" />
+    <Compile Include="Areas\Manual_Distribuidores\AreaRegistration.cs" />
+    <Compile Include="Areas\Manual_Distribuidores\Controllers\DefaultController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -197,6 +199,14 @@
     <Content Include="Areas\GanSoftApp\Content\img\feature.png" />
     <Content Include="Areas\GanSoftPro\.gitattributes" />
     <Content Include="Areas\GanSoftPro\.gitignore" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\Archivo_importar_datos.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\cerrar_sesion_2.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_6XL.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoftPro_3.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoftPro_5.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\plantillas_de_importancion_2.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\restaurar_datos_2.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\salir_2.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\feature.png" />
     <Content Include="Areas\GanSoftApp\Content\img\logo.png" />
     <Content Include="Areas\GanSoftApp\Content\img\logo.svg" />
@@ -242,7 +252,6 @@
     <Content Include="Areas\GanSoftPro\Content\img\captures\celos_sin_servicios.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\celos_sin_servicios_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\cerrar_sesion1.jpg" />
-    <Content Include="Areas\GanSoftPro\Content\img\captures\cerrar_sesion2.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\cierres_estadisticas.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\cierres_estadisticas_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\clinicos.jpg" />
@@ -274,9 +283,6 @@
     <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_10.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_2.jpg" />
-    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_3.jpg" />
-    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_4.jpg" />
-    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_5.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_6.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_8.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_9.jpg" />
@@ -407,7 +413,6 @@
     <Content Include="Areas\GanSoftPro\Content\img\captures\revisiones.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\revisiones_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\salir_1.jpg" />
-    <Content Include="Areas\GanSoftPro\Content\img\captures\salir_2.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\secado_destete.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\secado_destete_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\seleccionar.jpg" />
@@ -473,6 +478,11 @@
     <None Include="Areas\Generic\Content\js\_references.js" />
     <Content Include="Areas\Generic\Content\css\site.css" />
     <Content Include="Areas\Generic\favicon.ico" />
+    <Content Include="Areas\Manual_Distribuidores\Views\Default\Afiliación\Creacion_cuenta.cshtml" />
+    <Content Include="Areas\Manual_Distribuidores\Views\Default\Afiliación\Afiliacion.cshtml" />
+    <None Include="Areas\Manual_Distribuidores\Content\js\_references.js" />
+    <Content Include="Areas\Manual_Distribuidores\Content\css\site.css" />
+    <Content Include="Areas\Manual_Distribuidores\favicon.ico" />
     <Content Include="Content\css\bootstrap-11292.css" />
     <Content Include="Content\css\default.cd-top.css" />
     <Content Include="Content\img\cd-top-arrow.svg" />
@@ -503,6 +513,9 @@
     <Folder Include="Areas\GanSoftPro\Views\Shared\" />
     <Folder Include="Areas\Generic\Content\img\" />
     <Folder Include="Areas\Generic\Views\Shared\" />
+    <Folder Include="Areas\Manual_Distribuidores\Content\img\" />
+    <Folder Include="Areas\Manual_Distribuidores\Views\Default\Pendientes\" />
+    <Folder Include="Areas\Manual_Distribuidores\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bower.json" />
@@ -606,6 +619,22 @@
     <Content Include="Areas\Generic\.bowerrc">
       <DependentUpon>bower.json</DependentUpon>
     </Content>
+    <Content Include="Areas\Manual_Distribuidores\Views\Default\index.cshtml" />
+    <Content Include="Areas\Manual_Distribuidores\Content\manifest.json" />
+    <Content Include="Areas\Manual_Distribuidores\.gitattributes" />
+    <Content Include="Areas\Manual_Distribuidores\.gitignore" />
+    <Content Include="Areas\Manual_Distribuidores\bower.json" />
+    <Content Include="Areas\Manual_Distribuidores\.bowerrc">
+      <DependentUpon>bower.json</DependentUpon>
+    </Content>
+    <Content Include="Areas\Manual_Distribuidores\CHANGELOG.md" />
+    <Content Include="Areas\Manual_Distribuidores\README.md" />
+    <Content Include="Areas\Manual_Distribuidores\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Manual_Distribuidores\Views\web.config" />
+    <Content Include="Areas\Manual_Distribuidores\Views\Default\Distribución\Distribucion.cshtml" />
+    <Content Include="Areas\Manual_Distribuidores\Views\Default\Distribución\Movimientos.cshtml" />
+    <Content Include="Areas\Manual_Distribuidores\Views\Default\Distribución\Distribuidores.cshtml" />
+    <Content Include="Areas\Manual_Distribuidores\Views\Default\Operaciones\Operaciones.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Navbar.cshtml" />
     <Content Include="Views\Shared\_Sidebar.cshtml" />
