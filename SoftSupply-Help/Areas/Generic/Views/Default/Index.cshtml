@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Manifest = MvcApplication.Areas[ViewContext.RouteData.DataTokens["area"].ToString()];
+    ViewBag.Title = ViewContext.RouteData.Values["controller"];
+    ViewBag.SubTitle = ViewContext.RouteData.Values["action"];
+    ViewBag.MainTitle = $"Ayuda de {ViewBag.Manifest.Title}";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        @Html.Partial("_TitlePartial")
+    </div>
+    <div class="col-md-12">
+        <p>
+            Alguna pagina
+        </p>
+    </div>
+</div>

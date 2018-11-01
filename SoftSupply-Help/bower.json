@@ -1,0 +1,42 @@
+{
+  "name": "softsupply-help",
+  "homepage": "https://github.com/SoftSupply/SoftSupply-Help",
+  "authors": [
+    "Enner Pérez <ennerperez@gmail.com>"
+  ],
+  "description": "SoftSupply Online Help Management System",
+  "main": "",
+  "keywords": [
+    "SoftSupply",
+    "Online",
+    "Help",
+    "Management",
+    "System"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "html5shiv": "^3.7.3",
+    "animate.css": "^3.5.2",
+    "modernizr": "^3.5.0",
+    "respond": "^1.4.2",
+    "jquery.validation": "^1.17.0",
+    "Microsoft.jQuery.Unobtrusive.Validation": "^3.2.3",
+    "holderjs": "^2.9.4",
+    "jasny-bootstrap": "^3.1.3",
+    "lightbox2": "^2.9.0"
+  },
+  "resolutions": {
+    "jquery": "1.9.1 - 3"
+  }
+}
