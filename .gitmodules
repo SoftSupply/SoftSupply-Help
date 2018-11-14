@@ -4,6 +4,6 @@
 [submodule "GanSoft-App-Help"]
 	path = SoftSupply-Help/Areas/GanSoftApp
 	url = https://github.com/SoftSupply/GanSoft-App-Help.git
-[submodule "SoftSupply-Reseller-Help"]
+[submodule "Reseller-Help"]
 	path = SoftSupply-Help/Areas/Reseller
 	url = https://github.com/SoftSupply/SoftSupply-Reseller-Help.git
