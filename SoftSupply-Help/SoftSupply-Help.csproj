@@ -503,6 +503,9 @@
     <Content Include="Areas\Reseller\Content\img\captures\imagen 7.png" />
     <Content Include="Areas\Reseller\Content\img\captures\imagen 8.png" />
     <Content Include="Areas\Reseller\Content\img\captures\imagen 9.png" />
+    <Content Include="Areas\Reseller\Content\img\feature.png" />
+    <Content Include="Areas\Reseller\Content\img\logo.png" />
+    <Content Include="Areas\Reseller\Content\img\logo.svg" />
     <Content Include="Areas\Reseller\favicon.ico" />
     <Content Include="Content\css\bootstrap-11292.css" />
     <Content Include="Content\css\default.cd-top.css" />
