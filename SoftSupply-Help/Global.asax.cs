@@ -13,13 +13,12 @@ namespace SoftSupply.Help
 {
     public class MvcApplication : System.Web.HttpApplication
     {
-
         public static Dictionary<string, Manifest> Areas { get; internal set; }
 
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-            
+
             Areas = (from item in RouteTable.Routes.OfType<Route>()
                      where item.DataTokens != null && item.DataTokens.ContainsKey("area")
                      let area = item.DataTokens["area"]
