@@ -108,6 +108,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Areas\GanSoftWeb\AreaRegistration.cs" />
+    <Compile Include="Areas\GanSoftWeb\Controllers\DefaultController.cs" />
     <Compile Include="Areas\Reseller\AreaRegistration.cs" />
     <Compile Include="Areas\Reseller\Controllers\DefaultController.cs" />
     <Compile Include="References.cs" />
@@ -463,8 +465,25 @@
     <None Include="Areas\GanSoftPro\Content\js\_references.js" />
     <Content Include="Areas\GanSoftPro\Content\css\site.css" />
     <Content Include="Areas\GanSoftPro\favicon.ico" />
+    <Content Include="Areas\GanSoftWeb\.gitattributes" />
+    <Content Include="Areas\GanSoftWeb\.gitignore" />
+    <Content Include="Areas\GanSoftWeb\Content\css\site.css" />
+    <None Include="Areas\GanSoftWeb\Content\js\_references.js" />
+    <Content Include="Areas\GanSoftWeb\favicon.ico" />
     <Content Include="Areas\Generic\.gitattributes" />
     <Content Include="Areas\Generic\.gitignore" />
+    <Content Include="Areas\GanSoftWeb\.bowerrc" />
+    <Content Include="Areas\GanSoftWeb\bower.json" />
+    <Content Include="Areas\GanSoftWeb\CHANGELOG.md" />
+    <Content Include="Areas\GanSoftWeb\Content\manifest.json" />
+    <Content Include="Areas\GanSoftWeb\README.md" />
+    <Content Include="Areas\GanSoftWeb\Views\Default\Afiliacion\Afiliacion.cshtml" />
+    <Content Include="Areas\GanSoftWeb\Views\Default\Afiliacion\Cuenta.cshtml" />
+    <Content Include="Areas\GanSoftWeb\Views\Default\General\Cuenta.cshtml" />
+    <Content Include="Areas\GanSoftWeb\Views\Default\General\General.cshtml" />
+    <Content Include="Areas\GanSoftWeb\Views\Default\Index.cshtml" />
+    <Content Include="Areas\GanSoftWeb\Views\web.config" />
+    <Content Include="Areas\GanSoftWeb\Views\_ViewStart.cshtml" />
     <None Include="Areas\Generic\Content\js\_references.js" />
     <Content Include="Areas\Generic\Content\css\site.css" />
     <Content Include="Areas\Generic\favicon.ico" />
