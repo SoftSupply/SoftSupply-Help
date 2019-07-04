@@ -477,13 +477,10 @@
     <Content Include="Areas\GanSoftWeb\CHANGELOG.md" />
     <Content Include="Areas\GanSoftWeb\Content\manifest.json" />
     <Content Include="Areas\GanSoftWeb\README.md" />
-    <Content Include="Areas\GanSoftWeb\Views\Default\Afiliacion\Afiliacion.cshtml" />
-    <Content Include="Areas\GanSoftWeb\Views\Default\Afiliacion\Cuenta.cshtml" />
-    <Content Include="Areas\GanSoftWeb\Views\Default\General\Cuenta.cshtml" />
-    <Content Include="Areas\GanSoftWeb\Views\Default\General\General.cshtml" />
     <Content Include="Areas\GanSoftWeb\Views\Default\Index.cshtml" />
     <Content Include="Areas\GanSoftWeb\Views\web.config" />
     <Content Include="Areas\GanSoftWeb\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\GanSoftWeb\Views\Default\General\General.cshtml" />
     <None Include="Areas\Generic\Content\js\_references.js" />
     <Content Include="Areas\Generic\Content\css\site.css" />
     <Content Include="Areas\Generic\favicon.ico" />
