@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.3.1.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.3.1.1\build\Microsoft.Net.Compilers.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -53,8 +53,8 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -66,22 +66,22 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.Helpers.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Mvc, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.6\lib\net45\System.Web.Mvc.dll</HintPath>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.6\lib\net45\System.Web.Razor.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
@@ -108,6 +108,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Areas\GanSoftWeb\AreaRegistration.cs" />
+    <Compile Include="Areas\GanSoftWeb\Controllers\DefaultController.cs" />
     <Compile Include="Areas\Reseller\AreaRegistration.cs" />
     <Compile Include="Areas\Reseller\Controllers\DefaultController.cs" />
     <Compile Include="References.cs" />
@@ -463,8 +465,40 @@
     <None Include="Areas\GanSoftPro\Content\js\_references.js" />
     <Content Include="Areas\GanSoftPro\Content\css\site.css" />
     <Content Include="Areas\GanSoftPro\favicon.ico" />
+    <Content Include="Areas\GanSoftWeb\.gitattributes" />
+    <Content Include="Areas\GanSoftWeb\.gitignore" />
+    <Content Include="Areas\GanSoftWeb\Content\css\site.css" />
+    <None Include="Areas\GanSoftWeb\Content\js\_references.js" />
+    <Content Include="Areas\GanSoftWeb\Content\img\captures\imagen01.jpg" />
+    <Content Include="Areas\GanSoftWeb\Content\img\captures\imagen02.jpg" />
+    <Content Include="Areas\GanSoftWeb\Content\img\captures\imagen03.jpg" />
+    <Content Include="Areas\GanSoftWeb\Content\img\captures\imagen04.png" />
+    <Content Include="Areas\GanSoftWeb\Content\img\captures\imagen05.png" />
+    <Content Include="Areas\GanSoftWeb\Content\img\captures\imagen06.png" />
+    <Content Include="Areas\GanSoftWeb\Content\img\captures\imagen07.png" />
+    <Content Include="Areas\GanSoftWeb\Content\img\captures\imagen08.png" />
+    <Content Include="Areas\GanSoftWeb\Content\img\captures\imagen09.PNG" />
+    <Content Include="Areas\GanSoftWeb\Content\img\captures\imagen10.png" />
+    <Content Include="Areas\GanSoftWeb\Content\img\captures\imagen11.PNG" />
+    <Content Include="Areas\GanSoftWeb\Content\img\captures\imagen12.PNG" />
+    <Content Include="Areas\GanSoftWeb\Content\img\captures\imagen13.PNG" />
+    <Content Include="Areas\GanSoftWeb\Content\img\feature.png" />
+    <Content Include="Areas\GanSoftWeb\Content\img\logo.png" />
+    <Content Include="Areas\GanSoftWeb\Content\img\logo.svg" />
+    <Content Include="Areas\GanSoftWeb\favicon.ico" />
     <Content Include="Areas\Generic\.gitattributes" />
     <Content Include="Areas\Generic\.gitignore" />
+    <Content Include="Areas\GanSoftWeb\.bowerrc" />
+    <Content Include="Areas\GanSoftWeb\bower.json" />
+    <Content Include="Areas\GanSoftWeb\CHANGELOG.md" />
+    <Content Include="Areas\GanSoftWeb\Content\manifest.json" />
+    <Content Include="Areas\GanSoftWeb\README.md" />
+    <Content Include="Areas\GanSoftWeb\Views\Default\Index.cshtml" />
+    <Content Include="Areas\GanSoftWeb\Views\web.config" />
+    <Content Include="Areas\GanSoftWeb\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\GanSoftWeb\Views\Default\General\General.cshtml" />
+    <Content Include="Areas\GanSoftWeb\Views\Default\Estadisticas\Estadisticas.cshtml" />
+    <Content Include="Areas\GanSoftWeb\Views\Default\Historicos\Historicos.cshtml" />
     <None Include="Areas\Generic\Content\js\_references.js" />
     <Content Include="Areas\Generic\Content\css\site.css" />
     <Content Include="Areas\Generic\favicon.ico" />
@@ -641,13 +675,13 @@
     <Content Include="Areas\Reseller\Views\Default\Index.cshtml" />
     <Content Include="Areas\Reseller\Views\web.config" />
     <Content Include="Areas\Reseller\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\Reseller\Views\Default\Afiliacion\Afiliacion.cshtml" />
+    <Content Include="Areas\Reseller\Views\Default\Afiliacion\Principal.cshtml" />
     <Content Include="Areas\Reseller\Views\Default\Afiliacion\Cuenta.cshtml" />
-    <Content Include="Areas\Reseller\Views\Default\Distribucion\Distribucion.cshtml" />
+    <Content Include="Areas\Reseller\Views\Default\Distribucion\Principal.cshtml" />
     <Content Include="Areas\Reseller\Views\Default\Distribucion\Distribuidores.cshtml" />
     <Content Include="Areas\Reseller\Views\Default\Distribucion\Movimientos.cshtml" />
-    <Content Include="Areas\Reseller\Views\Default\Operaciones\Operaciones.cshtml" />
-    <Content Include="Areas\Reseller\Views\Default\Pendientes\Pendientes.cshtml" />
+    <Content Include="Areas\Reseller\Views\Default\Operaciones\Principal.cshtml" />
+    <Content Include="Areas\Reseller\Views\Default\Pendientes\Principal.cshtml" />
     <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
@@ -668,7 +702,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>59879</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:8080/</IISUrl>
+          <IISUrl>http://localhost:8080/Help</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -683,7 +717,7 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
-    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.9.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.3.1.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.3.1.1\build\Microsoft.Net.Compilers.props'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
