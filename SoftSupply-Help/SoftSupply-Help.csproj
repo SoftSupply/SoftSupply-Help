@@ -677,13 +677,9 @@
     <Content Include="Areas\Reseller\Views\Default\Index.cshtml" />
     <Content Include="Areas\Reseller\Views\web.config" />
     <Content Include="Areas\Reseller\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\Reseller\Views\Default\Afiliacion\Principal.cshtml" />
     <Content Include="Areas\Reseller\Views\Default\Afiliacion\Cuenta.cshtml" />
-    <Content Include="Areas\Reseller\Views\Default\Distribucion\Principal.cshtml" />
     <Content Include="Areas\Reseller\Views\Default\Distribucion\Distribuidores.cshtml" />
     <Content Include="Areas\Reseller\Views\Default\Distribucion\Movimientos.cshtml" />
-    <Content Include="Areas\Reseller\Views\Default\Operaciones\Principal.cshtml" />
-    <Content Include="Areas\Reseller\Views\Default\Pendientes\Principal.cshtml" />
     <Content Include="Areas\Reseller\Views\Default\Afiliacion\Afiliacion.cshtml" />
     <Content Include="Areas\Reseller\Views\Default\Distribucion\Distribucion.cshtml" />
     <Content Include="Areas\Reseller\Views\Default\Operaciones\Operaciones.cshtml" />
