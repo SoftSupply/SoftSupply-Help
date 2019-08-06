@@ -684,6 +684,10 @@
     <Content Include="Areas\Reseller\Views\Default\Distribucion\Movimientos.cshtml" />
     <Content Include="Areas\Reseller\Views\Default\Operaciones\Principal.cshtml" />
     <Content Include="Areas\Reseller\Views\Default\Pendientes\Principal.cshtml" />
+    <Content Include="Areas\Reseller\Views\Default\Afiliacion\Afiliacion.cshtml" />
+    <Content Include="Areas\Reseller\Views\Default\Distribucion\Distribucion.cshtml" />
+    <Content Include="Areas\Reseller\Views\Default\Operaciones\Operaciones.cshtml" />
+    <Content Include="Areas\Reseller\Views\Default\Pendientes\Pendientes.cshtml" />
     <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
