@@ -22,6 +22,7 @@ namespace SoftSupply.Help
             Areas = (from item in RouteTable.Routes.OfType<Route>()
                      where item.DataTokens != null && item.DataTokens.ContainsKey("area")
                      let area = item.DataTokens["area"]
+                     orderby area
                      select Json.Decode<Manifest>(File.ReadAllText(Server.MapPath($"areas/{area}/content/manifest.json"))))
                      .ToDictionary(k => k.Name, v => v);
 
