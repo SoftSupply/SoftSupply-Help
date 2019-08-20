@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.Net.Compilers.3.1.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.3.1.1\build\Microsoft.Net.Compilers.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
@@ -468,6 +468,9 @@
     <Content Include="Areas\GanSoftWeb\.gitattributes" />
     <Content Include="Areas\GanSoftWeb\.gitignore" />
     <Content Include="Areas\GanSoftWeb\Content\css\site.css" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Inicio\ConceptosBasicos.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Inicio\PrimeraVez.cshtml" />
+    <Content Include="Areas\GanSoftPro\Views\Default\Inicio\Glosario.cshtml" />
     <None Include="Areas\GanSoftWeb\Content\js\_references.js" />
     <Content Include="Areas\GanSoftWeb\Content\img\captures\imagen01.jpg" />
     <Content Include="Areas\GanSoftWeb\Content\img\captures\imagen02.jpg" />
