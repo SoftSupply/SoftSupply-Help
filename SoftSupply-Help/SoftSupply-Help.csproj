@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.Net.Compilers.3.1.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.3.1.1\build\Microsoft.Net.Compilers.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
@@ -191,23 +191,6 @@
     <Content Include="Areas\GanSoftApp\Content\img\feature.png" />
     <Content Include="Areas\GanSoftPro\.gitattributes" />
     <Content Include="Areas\GanSoftPro\.gitignore" />
-    <Content Include="Areas\GanSoftPro\Content\img\captures\Archivo_importar_datos.jpg" />
-    <Content Include="Areas\GanSoftPro\Content\img\captures\cerrar_sesion_2.jpg" />
-    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_6XL.jpg" />
-    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoftPro_3.jpg" />
-    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoftPro_5.jpg" />
-    <Content Include="Areas\GanSoftPro\Content\img\captures\plantillas_de_importancion_2.jpg" />
-    <Content Include="Areas\GanSoftPro\Content\img\captures\restaurar_datos_2.jpg" />
-    <Content Include="Areas\GanSoftPro\Content\img\captures\salir_2.jpg" />
-    <Content Include="Areas\GanSoftPro\Content\img\feature.png" />
-    <Content Include="Areas\GanSoftApp\Content\img\logo.png" />
-    <Content Include="Areas\GanSoftApp\Content\img\logo.svg" />
-    <None Include="Areas\GanSoftApp\Content\js\_references.js" />
-    <Content Include="Areas\GanSoftApp\Content\css\site.css" />
-    <Content Include="Areas\GanSoftApp\favicon.ico" />
-    <Content Include="Areas\GanSoftPro\.bowerrc">
-      <DependentUpon>bower.json</DependentUpon>
-    </Content>
     <Content Include="Areas\GanSoftPro\Content\img\captures\abortos.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\abortos_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\acerca_de.jpg" />
@@ -219,6 +202,7 @@
     <Content Include="Areas\GanSoftPro\Content\img\captures\arbol_genealogico_reportes.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\arbol_genealogico_reportes_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\Archivo.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\Archivo_importar_datos.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\avisos_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\avisos_2.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\ayuda.jpg" />
@@ -244,10 +228,15 @@
     <Content Include="Areas\GanSoftPro\Content\img\captures\celos_sin_servicios.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\celos_sin_servicios_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\cerrar_sesion1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\cerrar_sesion_2.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\cierres_estadisticas.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\cierres_estadisticas_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\clinicos.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\clinicos_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\CodigoPractico.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\Codigos.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\CodigoUnico.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\ComposicionRacial.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\condiciones_corporales.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\condiciones_corporales_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\configuracion.jpg" />
@@ -269,6 +258,10 @@
     <Content Include="Areas\GanSoftPro\Content\img\captures\enviar_comentarios.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\enviar_comentarios_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\estadistica.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\Estado.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\Estatus.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\EstatusProductivo.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\EstatusReproductivo.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\evento.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\exportar_datos.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro.jpg" />
@@ -276,8 +269,11 @@
     <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_10.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_2.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_6.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_6XL.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_8.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoft Pro_9.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoftPro_3.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\GanSoftPro_5.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\generador_de_reporte.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\generador_de_reporte_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\generador_de_reporte_2.jpg" />
@@ -378,6 +374,7 @@
     <Content Include="Areas\GanSoftPro\Content\img\captures\planes_sanitarios_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\planes_sanitarios_2.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\plantillas_de_importancion.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\plantillas_de_importancion_2.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\plantillas_de_selectores.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\plantillas_de_selectores_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\plantillas_para_gansoft_movil.jpg" />
@@ -402,9 +399,11 @@
     <Content Include="Areas\GanSoftPro\Content\img\captures\respaldar_datos_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\restaurar_datos.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\restaurar_datos_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\restaurar_datos_2.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\revisiones.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\revisiones_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\salir_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\captures\salir_2.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\secado_destete.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\secado_destete_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\seleccionar.jpg" />
@@ -424,6 +423,15 @@
     <Content Include="Areas\GanSoftPro\Content\img\captures\vientres_1.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\vientres_reportes.jpg" />
     <Content Include="Areas\GanSoftPro\Content\img\captures\vientres_reportes_1.jpg" />
+    <Content Include="Areas\GanSoftPro\Content\img\feature.png" />
+    <Content Include="Areas\GanSoftApp\Content\img\logo.png" />
+    <Content Include="Areas\GanSoftApp\Content\img\logo.svg" />
+    <None Include="Areas\GanSoftApp\Content\js\_references.js" />
+    <Content Include="Areas\GanSoftApp\Content\css\site.css" />
+    <Content Include="Areas\GanSoftApp\favicon.ico" />
+    <Content Include="Areas\GanSoftPro\.bowerrc">
+      <DependentUpon>bower.json</DependentUpon>
+    </Content>
     <Content Include="Areas\GanSoftPro\Content\img\logo.svg" />
     <Content Include="Areas\GanSoftPro\Content\img\logo.png" />
     <Content Include="Areas\GanSoftApp\bower.json" />
