@@ -12,4 +12,4 @@
 	url = https://github.com/SoftSupply/SoftSupply-Reseller-Help.git
 [submodule "PotSoft-Help"]
 	path = PotSoft-Help
-	url = https://github.com/tdproca/PotSoft-Help.git
+	url = https://github.com/SoftSupply/PotSoft-Help.git
