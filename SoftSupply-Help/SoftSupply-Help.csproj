@@ -110,6 +110,8 @@
   <ItemGroup>
     <Compile Include="Areas\GanSoftWeb\AreaRegistration.cs" />
     <Compile Include="Areas\GanSoftWeb\Controllers\DefaultController.cs" />
+    <Compile Include="Areas\Potsoft\AreaRegistration.cs" />
+    <Compile Include="Areas\Potsoft\Controllers\DefaultController.cs" />
     <Compile Include="Areas\Reseller\AreaRegistration.cs" />
     <Compile Include="Areas\Reseller\Controllers\DefaultController.cs" />
     <Compile Include="References.cs" />
@@ -499,6 +501,9 @@
     <Content Include="Areas\GanSoftWeb\Content\img\logo.png" />
     <Content Include="Areas\GanSoftWeb\Content\img\logo.svg" />
     <Content Include="Areas\GanSoftWeb\favicon.ico" />
+    <Content Include="Areas\Potsoft\Content\css\site.css" />
+    <None Include="Areas\Potsoft\Content\js\_references.js" />
+    <Content Include="Areas\Potsoft\favicon.ico" />
     <Content Include="Areas\Generic\.gitattributes" />
     <Content Include="Areas\Generic\.gitignore" />
     <Content Include="Areas\GanSoftWeb\.bowerrc" />
@@ -512,6 +517,18 @@
     <Content Include="Areas\GanSoftWeb\Views\Default\General\General.cshtml" />
     <Content Include="Areas\GanSoftWeb\Views\Default\Estadisticas\Estadisticas.cshtml" />
     <Content Include="Areas\GanSoftWeb\Views\Default\Historicos\Historicos.cshtml" />
+    <Content Include="Areas\Potsoft\.gitattributes" />
+    <Content Include="Areas\Potsoft\.gitignore" />
+    <Content Include="Areas\Potsoft\bower.json" />
+    <Content Include="Areas\Potsoft\.bowerrc">
+      <DependentUpon>bower.json</DependentUpon>
+    </Content>
+    <Content Include="Areas\Potsoft\CHANGELOG.md" />
+    <Content Include="Areas\Potsoft\Content\manifest.json" />
+    <Content Include="Areas\Potsoft\README.md" />
+    <Content Include="Areas\Potsoft\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Potsoft\Views\Default\Index.cshtml" />
+    <Content Include="Areas\Potsoft\Views\web.config" />
     <None Include="Areas\Generic\Content\js\_references.js" />
     <Content Include="Areas\Generic\Content\css\site.css" />
     <Content Include="Areas\Generic\favicon.ico" />
@@ -577,6 +594,8 @@
     <Folder Include="Areas\GanSoftPro\Views\Shared\" />
     <Folder Include="Areas\Generic\Content\img\" />
     <Folder Include="Areas\Generic\Views\Shared\" />
+    <Folder Include="Areas\Potsoft\Content\img\" />
+    <Folder Include="Areas\Potsoft\Views\Shared\" />
     <Folder Include="Areas\Reseller\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
