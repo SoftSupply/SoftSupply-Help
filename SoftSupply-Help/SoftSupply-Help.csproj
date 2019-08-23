@@ -503,6 +503,9 @@
     <Content Include="Areas\GanSoftWeb\favicon.ico" />
     <Content Include="Areas\Potsoft\Content\css\site.css" />
     <None Include="Areas\Potsoft\Content\js\_references.js" />
+    <Content Include="Areas\Potsoft\Content\img\feature.png" />
+    <Content Include="Areas\Potsoft\Content\img\logo.png" />
+    <Content Include="Areas\Potsoft\Content\img\logo_potsoft.svg" />
     <Content Include="Areas\Potsoft\favicon.ico" />
     <Content Include="Areas\Generic\.gitattributes" />
     <Content Include="Areas\Generic\.gitignore" />
@@ -538,6 +541,9 @@
     <Content Include="Areas\Reseller\.gitattributes" />
     <Content Include="Areas\Reseller\.gitignore" />
     <Content Include="Areas\Reseller\Content\css\site.css" />
+    <Content Include="Areas\Potsoft\Views\Default\Inicio\Glosario.cshtml" />
+    <Content Include="Areas\Potsoft\Views\Default\Archivo\ModulosProduccion.cshtml" />
+    <Content Include="Areas\Potsoft\Views\Default\Archivo\UnidadesProduccion.cshtml" />
     <None Include="Areas\Reseller\Content\js\_references.js" />
     <Content Include="Areas\Reseller\Content\img\captures\Imagen 1.jpg" />
     <Content Include="Areas\Reseller\Content\img\captures\imagen 10.png" />
@@ -594,7 +600,6 @@
     <Folder Include="Areas\GanSoftPro\Views\Shared\" />
     <Folder Include="Areas\Generic\Content\img\" />
     <Folder Include="Areas\Generic\Views\Shared\" />
-    <Folder Include="Areas\Potsoft\Content\img\" />
     <Folder Include="Areas\Potsoft\Views\Shared\" />
     <Folder Include="Areas\Reseller\Views\Shared\" />
   </ItemGroup>
