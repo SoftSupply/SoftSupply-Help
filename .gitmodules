@@ -10,3 +10,6 @@
 [submodule "Reseller-Help"]
 	path = SoftSupply-Help/Areas/Reseller
 	url = https://github.com/SoftSupply/SoftSupply-Reseller-Help.git
+[submodule "PotSoft-Help"]
+	path = SoftSupply-Help/Areas/PotSoft
+	url = https://github.com/SoftSupply/PotSoft-Help.git
