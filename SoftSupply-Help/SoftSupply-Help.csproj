@@ -573,7 +573,7 @@
     <Content Include="Areas\Potsoft\Content\img\capturas\9.jpg" />
     <Content Include="Areas\Potsoft\Content\img\feature.png" />
     <Content Include="Areas\Potsoft\Content\img\logo.png" />
-    <Content Include="Areas\Potsoft\Content\img\logo_potsoft.svg" />
+    <Content Include="Areas\Potsoft\Content\img\logo.svg" />
     <Content Include="Areas\Potsoft\favicon.ico" />
     <Content Include="Areas\Generic\.gitattributes" />
     <Content Include="Areas\Generic\.gitignore" />
